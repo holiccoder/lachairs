@@ -3,19 +3,8 @@
 import { useState, useCallback, useRef, useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import type { Category } from "@/lib/magento";
-
-function CategoryIcon() {
-  return (
-    <svg viewBox="0 0 48 48" className="w-10 h-10" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <rect x="12" y="20" width="24" height="20" rx="3" />
-      <path d="M12 28 C20 24 28 24 36 28" />
-      <rect x="18" y="8" width="12" height="16" rx="2" />
-      <path d="M22 8 L22 4 M26 8 L26 4" strokeLinecap="round" />
-    </svg>
-  );
-}
 
 /* -------------------------------------------------------------------------- */
 /*  Component                                                                  */
@@ -23,12 +12,20 @@ function CategoryIcon() {
 
 export default function Header() {
   const router = useRouter();
+  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
   const [activeMegaCategory, setActiveMegaCategory] = useState(0);
+  const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [categories, setCategories] = useState<Category[]>([]);
   const megaCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setMobileCategoryOpen(false);
+    setMegaMenuOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     fetch("/api/categories")
@@ -136,7 +133,11 @@ export default function Header() {
         {/* Mobile hamburger */}
         <button
           className="lg:hidden text-heading"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          onClick={() => {
+            const next = !mobileMenuOpen;
+            setMobileMenuOpen(next);
+            if (!next) setMobileCategoryOpen(false);
+          }}
           aria-label="Toggle menu"
         >
           <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -160,9 +161,50 @@ export default function Header() {
           animate={{ opacity: 1, height: "auto" }}
           className="lg:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4"
         >
-          <button className="flex items-center gap-1 text-sm font-medium text-heading">
-            Categories
-          </button>
+          <div>
+            <button
+              onClick={() => setMobileCategoryOpen(!mobileCategoryOpen)}
+              className="flex items-center gap-1 text-sm font-medium text-heading w-full"
+            >
+              Categories
+              <svg
+                className={`w-3 h-3 mt-px transition-transform ${mobileCategoryOpen ? "rotate-180" : ""}`}
+                viewBox="0 0 12 12"
+                fill="currentColor"
+              >
+                <path d="M3 5 L6 8 L9 5" />
+              </svg>
+            </button>
+            {mobileCategoryOpen && categories.length > 0 && (
+              <div className="mt-3 ml-2 pl-3 border-l-2 border-gray-200 space-y-2">
+                {categories.map((cat) => (
+                  <div key={cat.id}>
+                    <Link
+                      href={`/products/${cat.urlPath || cat.urlKey}`}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="text-sm font-medium text-heading hover:text-brand transition-colors block py-0.5"
+                    >
+                      {cat.name}
+                    </Link>
+                    {cat.children.length > 0 && (
+                      <div className="ml-3 mt-1 space-y-1">
+                        {cat.children.map((child) => (
+                          <Link
+                            key={child.id}
+                            href={`/products/${child.urlPath || child.urlKey}`}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="text-sm text-body hover:text-brand transition-colors block py-0.5"
+                          >
+                            {child.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
 
           <Link href="/register" className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded transition-colors text-center">
             CREATE BUSINESS ACCOUNT
@@ -230,20 +272,15 @@ export default function Header() {
                     {categories[activeMegaCategory].children.map((sub) => (
                       <Link
                         key={sub.id}
-                        href={`/products/${sub.urlKey}`}
-                        className="flex flex-col items-center gap-2 group text-center"
+                        href={`/products/${sub.urlPath}`}
+                        className="block text-sm text-body hover:text-brand transition-colors"
                       >
-                        <div className="w-16 h-16 flex items-center justify-center rounded-full border border-gray-200 group-hover:border-brand group-hover:bg-brand/5 transition-colors text-gray-400 group-hover:text-brand">
-                          <CategoryIcon />
-                        </div>
-                        <span className="text-xs text-body group-hover:text-heading transition-colors leading-tight">
-                          {sub.name}
-                        </span>
+                        {sub.name}
                       </Link>
                     ))}
                   </div>
                   <Link
-                    href={`/products/${categories[activeMegaCategory].urlKey}`}
+                    href={`/products/${categories[activeMegaCategory].urlPath}`}
                     className="inline-flex items-center gap-1 text-sm text-brand hover:text-brand-dark transition-colors mt-6 font-medium"
                   >
                     Shop more in {categories[activeMegaCategory].name}
@@ -255,7 +292,7 @@ export default function Header() {
               ) : (
                 <div className="flex items-center justify-center h-48">
                   <Link
-                    href={`/products/${categories[activeMegaCategory]?.urlKey ?? "#"}`}
+                    href={`/products/${categories[activeMegaCategory]?.urlPath ?? "#"}`}
                     className="text-sm text-brand hover:text-brand-dark transition-colors font-medium"
                   >
                     Shop {categories[activeMegaCategory]?.name ?? ""}
