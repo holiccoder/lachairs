@@ -182,10 +182,10 @@ export default function Footer() {
             
             <div className="text-center">
               <div className={`mx-auto flex items-center justify-center h-16 w-16 rounded-full mb-4 ${
-                modalSuccess ? "bg-green-100" : "bg-red-100"
+                modalSuccess ? "bg-brand/10" : "bg-red-100"
               }`}>
                 {modalSuccess ? (
-                  <svg className="h-10 w-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="h-10 w-10 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 ) : (
@@ -196,7 +196,7 @@ export default function Footer() {
               </div>
               
               <h3 className={`text-xl font-bold mb-2 ${
-                modalSuccess ? "text-green-800" : "text-red-800"
+                modalSuccess ? "text-heading" : "text-red-800"
               }`}>
                 {modalSuccess ? "Success!" : "Oops!"}
               </h3>
@@ -209,7 +209,7 @@ export default function Footer() {
                 onClick={closeModal}
                 className={`w-full px-4 py-2.5 rounded font-semibold text-white transition-colors ${
                   modalSuccess
-                    ? "bg-green-600 hover:bg-green-700"
+                    ? "bg-brand hover:bg-brand-dark"
                     : "bg-red-600 hover:bg-red-700"
                 }`}
               >
