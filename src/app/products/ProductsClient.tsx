@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import type { Product, CategoryInfo } from "@/lib/magento";
 
 /* -------------------------------------------------------------------------- */
@@ -51,13 +52,22 @@ export default function ProductsClient({
   breadcrumbs,
   categoryNames,
   searchQuery,
+  pagination,
 }: {
   products: Product[];
   title?: string;
   breadcrumbs?: { label: string; href?: string }[];
   categoryNames?: Record<string, CategoryInfo>;
   searchQuery?: string;
+  pagination?: {
+    currentPage: number;
+    totalPages: number;
+    totalItems: number;
+    pageSize: number;
+  };
 }) {
+  const pathname = usePathname();
+  const router = useRouter();
   const defaultBreadcrumbs = [
     { label: "Home", href: "/" },
     { label: "All Products" },
@@ -79,6 +89,86 @@ export default function ProductsClient({
 
   const toggleCheckbox = (key: string) => {
     setCheckedFilters((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const handlePageChange = (page: number) => {
+    const params = new URLSearchParams(window.location.search);
+    if (page === 1) {
+      params.delete("page");
+    } else {
+      params.set("page", page.toString());
+    }
+    router.push(`${pathname}?${params.toString()}`);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const renderPagination = () => {
+    if (!pagination || pagination.totalPages <= 1) return null;
+
+    const { currentPage, totalPages } = pagination;
+    const pages: (number | string)[] = [];
+
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) {
+        pages.push(i);
+      }
+    } else {
+      if (currentPage <= 4) {
+        for (let i = 1; i <= 5; i++) pages.push(i);
+        pages.push("...");
+        pages.push(totalPages);
+      } else if (currentPage >= totalPages - 3) {
+        pages.push(1);
+        pages.push("...");
+        for (let i = totalPages - 4; i <= totalPages; i++) pages.push(i);
+      } else {
+        pages.push(1);
+        pages.push("...");
+        for (let i = currentPage - 1; i <= currentPage + 1; i++) pages.push(i);
+        pages.push("...");
+        pages.push(totalPages);
+      }
+    }
+
+    return (
+      <div className="flex items-center justify-center gap-2 mt-8 mb-8">
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="px-3 py-2 text-sm border border-gray-300 rounded hover:border-brand transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Previous
+        </button>
+
+        {pages.map((page, idx) =>
+          typeof page === "string" ? (
+            <span key={`ellipsis-${idx}`} className="px-2 text-body">
+              ...
+            </span>
+          ) : (
+            <button
+              key={page}
+              onClick={() => handlePageChange(page)}
+              className={`px-3 py-2 text-sm border rounded transition-colors ${
+                page === currentPage
+                  ? "bg-brand text-white border-brand"
+                  : "border-gray-300 hover:border-brand"
+              }`}
+            >
+              {page}
+            </button>
+          )
+        )}
+
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="px-3 py-2 text-sm border border-gray-300 rounded hover:border-brand transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Next
+        </button>
+      </div>
+    );
   };
 
   // Derive filter counts from real data
@@ -115,8 +205,7 @@ export default function ProductsClient({
     sorted.sort((a, b) => b.price - a.price);
   }
 
-  const displayCount = parseInt(showCount, 10);
-  const displayed = sorted.slice(0, displayCount);
+  const displayed = sorted;
 
   return (
     <>
@@ -303,7 +392,9 @@ export default function ProductsClient({
           <div className="flex-1 min-w-0">
             {/* Top Control Bar */}
             <div className="flex items-center justify-between mb-3">
-              <span className="text-sm text-body">{products.length} Items</span>
+              <span className="text-sm text-body">
+                {pagination ? `${pagination.totalItems} Items` : `${products.length} Items`}
+              </span>
               <div className="flex items-center gap-2">
                 <span className="text-xs text-body">Sort By</span>
                 <select
@@ -368,20 +459,30 @@ export default function ProductsClient({
               ))}
             </div>
 
+            {/* Bottom Pagination */}
+            {renderPagination()}
+
             {/* Bottom Control Bar */}
-            <div className="flex items-center justify-end border-t border-gray-200 pt-4 mb-8">
-              <div className="flex items-center gap-2">
-                <span className="text-xs text-body">Show</span>
-                <select
-                  value={showCount}
-                  onChange={(e) => setShowCount(e.target.value)}
-                  className="text-sm border border-gray-200 rounded px-2 py-1.5 outline-none focus:border-brand text-heading"
-                >
-                  <option>12</option>
-                  <option>24</option>
-                  <option>48</option>
-                </select>
-              </div>
+            <div className="flex items-center justify-between border-t border-gray-200 pt-4 mb-8">
+              <span className="text-sm text-body">
+                {pagination
+                  ? `Showing ${((pagination.currentPage - 1) * pagination.pageSize) + 1}-${Math.min(pagination.currentPage * pagination.pageSize, pagination.totalItems)} of ${pagination.totalItems} items`
+                  : `${products.length} Items`}
+              </span>
+              {!pagination && (
+                <div className="flex items-center gap-2">
+                  <span className="text-xs text-body">Show</span>
+                  <select
+                    value={showCount}
+                    onChange={(e) => setShowCount(e.target.value)}
+                    className="text-sm border border-gray-200 rounded px-2 py-1.5 outline-none focus:border-brand text-heading"
+                  >
+                    <option>12</option>
+                    <option>24</option>
+                    <option>48</option>
+                  </select>
+                </div>
+              )}
             </div>
           </div>
         </div>

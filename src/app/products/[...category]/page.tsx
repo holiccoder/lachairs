@@ -13,10 +13,14 @@ function slugToLabel(slug: string): string {
 
 interface Props {
   params: Promise<{ category: string[] }>;
+  searchParams: Promise<{ page?: string }>;
 }
 
-export default async function CategoryPage({ params }: Props) {
+export default async function CategoryPage({ params, searchParams }: Props) {
   const { category: segments } = await params;
+  const { page: pageParam } = await searchParams;
+  const currentPage = parseInt(pageParam || "1", 10);
+  const pageSize = 24;
 
   // Try as url_key (last segment), then as full url_path
   const urlKey = segments[segments.length - 1];
@@ -31,7 +35,7 @@ export default async function CategoryPage({ params }: Props) {
   }
 
   const [result, categoryNames] = await Promise.all([
-    getProductsByCategory(category.id),
+    getProductsByCategory(category.id, currentPage, pageSize),
     getCategoryLookup(),
   ]);
 
@@ -50,6 +54,8 @@ export default async function CategoryPage({ params }: Props) {
     });
   }
 
+  const totalPages = Math.ceil(result.total / pageSize);
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
@@ -58,6 +64,12 @@ export default async function CategoryPage({ params }: Props) {
         title={category.name}
         breadcrumbs={breadcrumbs}
         categoryNames={categoryNames}
+        pagination={{
+          currentPage,
+          totalPages,
+          totalItems: result.total,
+          pageSize,
+        }}
       />
 
       <Footer />
