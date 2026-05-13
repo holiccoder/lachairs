@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 /* -------------------------------------------------------------------------- */
@@ -25,6 +28,57 @@ const footerSupportLinks = [
 /* -------------------------------------------------------------------------- */
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
+  const [modalSuccess, setModalSuccess] = useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email || !email.includes("@")) {
+      setModalMessage("Please enter a valid email address.");
+      setModalSuccess(false);
+      setShowModal(true);
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setModalMessage(data.message || "Successfully subscribed to newsletter!");
+        setModalSuccess(true);
+        setEmail("");
+      } else {
+        setModalMessage(data.message || "Failed to subscribe. Please try again.");
+        setModalSuccess(false);
+      }
+    } catch (error) {
+      setModalMessage("Failed to subscribe. Please try again.");
+      setModalSuccess(false);
+    } finally {
+      setIsLoading(false);
+      setShowModal(true);
+    }
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setModalMessage("");
+    setModalSuccess(false);
+  };
   return (
     <footer className="bg-white border-t border-gray-200 pt-16 pb-8 px-6 lg:px-12">
       <div className="max-w-[1440px] mx-auto">
@@ -83,16 +137,23 @@ export default function Footer() {
               Sign up for our newsletter to get updates on new arrivals, special offers and our
               latest news.
             </p>
-            <div className="flex">
+            <form onSubmit={handleSubscribe} className="flex">
               <input
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email..."
+                required
                 className="flex-1 border border-gray-300 rounded-l px-3 py-2.5 text-sm text-body placeholder-gray-400 outline-none focus:border-brand transition-colors"
               />
-              <button className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded-r transition-colors tracking-wide">
-                SUBSCRIBE
+              <button 
+                type="submit"
+                disabled={isLoading}
+                className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded-r transition-colors tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isLoading ? "SUBSCRIBING..." : "SUBSCRIBE"}
               </button>
-            </div>
+            </form>
           </div>
         </div>
 
@@ -104,6 +165,60 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Lachairs Commercial Products. All rights reserved.
         </p>
       </div>
+
+      {/* Success/Error Modal */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6 relative animate-fade-in">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Close modal"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            
+            <div className="text-center">
+              <div className={`mx-auto flex items-center justify-center h-16 w-16 rounded-full mb-4 ${
+                modalSuccess ? "bg-green-100" : "bg-red-100"
+              }`}>
+                {modalSuccess ? (
+                  <svg className="h-10 w-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                ) : (
+                  <svg className="h-10 w-10 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                )}
+              </div>
+              
+              <h3 className={`text-xl font-bold mb-2 ${
+                modalSuccess ? "text-green-800" : "text-red-800"
+              }`}>
+                {modalSuccess ? "Success!" : "Oops!"}
+              </h3>
+              
+              <p className="text-sm text-body mb-6">
+                {modalMessage}
+              </p>
+              
+              <button
+                onClick={closeModal}
+                className={`w-full px-4 py-2.5 rounded font-semibold text-white transition-colors ${
+                  modalSuccess
+                    ? "bg-green-600 hover:bg-green-700"
+                    : "bg-red-600 hover:bg-red-700"
+                }`}
+              >
+                {modalSuccess ? "Great!" : "Try Again"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
 }
