@@ -64,6 +64,13 @@ export default function Header() {
 
         {/* Nav Links (desktop) */}
         <nav className="hidden lg:flex items-center gap-6">
+          <Link href="/" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            Home
+          </Link>
+          <Link href="/products" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            All Products
+          </Link>
+          
           {/* Categories — mega menu trigger */}
           <div
             className="relative"
@@ -82,7 +89,12 @@ export default function Header() {
             </button>
           </div>
 
-
+          <Link href="/about" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            About
+          </Link>
+          <Link href="/contact" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            Contact
+          </Link>
         </nav>
 
         {/* CTA */}
@@ -161,6 +173,13 @@ export default function Header() {
           animate={{ opacity: 1, height: "auto" }}
           className="lg:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4"
         >
+          <Link href="/" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            Home
+          </Link>
+          <Link href="/products" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            All Products
+          </Link>
+          
           <div>
             <button
               onClick={() => setMobileCategoryOpen(!mobileCategoryOpen)}
@@ -205,6 +224,13 @@ export default function Header() {
               </div>
             )}
           </div>
+
+          <Link href="/about" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            About Us
+          </Link>
+          <Link href="/contact" className="text-sm font-medium text-heading hover:text-brand transition-colors">
+            Contact Us
+          </Link>
 
           <Link href="/register" className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded transition-colors text-center">
             CREATE BUSINESS ACCOUNT
