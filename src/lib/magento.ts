@@ -279,19 +279,27 @@ export async function getCategories(): Promise<Category[]> {
     children_data: MagentoCategory[];
   }>("categories");
 
-  return data.children_data.map(transformCategory);
+  return data.children_data.map((cat) => transformCategory(cat, ""));
 }
 
-function transformCategory(cat: MagentoCategory): Category {
+function transformCategory(cat: MagentoCategory, parentPath = ""): Category {
+  // Generate url_key from name if not available
+  const rawUrlKey = catAttr(cat, "url_key");
+  const urlKey = rawUrlKey || cat.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  
+  // Build url_path: parentPath/urlKey for nested categories
+  const rawUrlPath = catAttr(cat, "url_path");
+  const urlPath = rawUrlPath || (parentPath ? `${parentPath}/${urlKey}` : urlKey);
+  
   return {
     id: cat.id,
     parentId: cat.parent_id,
     name: cat.name,
     level: cat.level,
     productCount: cat.product_count,
-    urlKey: catAttr(cat, "url_key"),
-    urlPath: catAttr(cat, "url_path"),
-    children: (cat.children_data || []).map(transformCategory),
+    urlKey,
+    urlPath,
+    children: (cat.children_data || []).map((child) => transformCategory(child, urlPath)),
   };
 }
 
