@@ -152,7 +152,10 @@ function attr(product: MagentoProduct, code: string): string {
 }
 
 function imageUrl(file: string): string {
-  return `${MEDIA_BASE}${file}`;
+  // Remove cache hash path (e.g., /cache/100x100/abc123.jpg -> /abc123.jpg)
+  // to get the original full-size image
+  const cleanPath = file.replace(/^\/cache\/[^/]+\//, '/');
+  return `${MEDIA_BASE}${cleanPath}`;
 }
 
 function findThumbnail(entries: MagentoMediaEntry[]): string {
