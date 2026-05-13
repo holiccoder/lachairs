@@ -15,42 +15,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Magento 2 doesn't have a direct newsletter API for guest users
-    // We'll use the customer newsletter subscription endpoint
-    // For guest users, we need to create a minimal subscriber entry
-    
-    // Option 1: Try to subscribe via Magento's newsletter subscriber API
-    // This requires creating a custom endpoint on Magento side
-    // For now, we'll store it in a simple way or integrate with email service
-    
-    // Option 2: Use Magento's customer API if the user exists
-    // For guest newsletter subscription, we can use a workaround
-    
-    const url = `${API_BASE}customers/search?searchCriteria[filter_groups][0][filters][0][field]=email&searchCriteria[filter_groups][0][filters][0][value]=${encodeURIComponent(email)}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq`;
-    
-    const searchResponse = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${ACCESS_TOKEN}`,
-        "Content-Type": "application/json",
-      },
-      cache: "no-store",
-    });
+    // Simulate a small delay for better UX
+    await new Promise((resolve) => setTimeout(resolve, 500));
 
-    if (!searchResponse.ok) {
-      // If we can't connect to Magento, still accept the subscription
-      // In production, you might want to queue this or use a different service
-      console.log("Magento API not available, accepting subscription locally");
-      
-      return NextResponse.json({
-        success: true,
-        message: "Successfully subscribed to newsletter!",
-      });
-    }
-
-    const searchData = await searchResponse.json();
-    
-    // If customer exists, we could update their subscription status
-    // For now, we'll just accept the subscription
+    // Always return success (fake subscription)
     return NextResponse.json({
       success: true,
       message: "Successfully subscribed to newsletter!",
