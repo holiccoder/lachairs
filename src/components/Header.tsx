@@ -5,6 +5,9 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import type { Category } from "@/lib/magento";
+import CartIconButton from "@/components/cart/CartIconButton";
+import CartDrawer from "@/components/cart/CartDrawer";
+import Toast from "@/components/cart/Toast";
 
 /* -------------------------------------------------------------------------- */
 /*  Component                                                                  */
@@ -88,7 +91,7 @@ export default function Header() {
           href="/register"
           className="hidden lg:block bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded transition-colors whitespace-nowrap"
         >
-          CREATE BUSINESS ACCOUNT
+          CREATE WHOLESALE ACCOUNT
         </Link>
 
         {/* Search */}
@@ -116,22 +119,15 @@ export default function Header() {
               <path d="M3 5 L6 8 L9 5" />
             </svg>
           </Link>
-          <button className="relative text-heading hover:text-brand transition-colors">
-            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="9" cy="21" r="1" />
-              <circle cx="20" cy="21" r="1" />
-              <path d="M1 1 H5 L7.68 14.39 A2 2 0 0 0 9.66 16 H19.4 A2 2 0 0 0 21.36 14.39 L23 6 H6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-            <span className="absolute -top-1 -right-1 bg-brand text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-              0
-            </span>
-          </button>
+          <CartIconButton />
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          className="lg:hidden text-heading"
-          onClick={() => {
+        {/* Mobile cart & hamburger */}
+        <div className="lg:hidden flex items-center gap-3">
+          <CartIconButton />
+          <button
+            className="text-heading"
+            onClick={() => {
             const next = !mobileMenuOpen;
             setMobileMenuOpen(next);
             if (!next) setMobileCategoryOpen(false);
@@ -150,6 +146,7 @@ export default function Header() {
             )}
           </svg>
         </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -205,7 +202,7 @@ export default function Header() {
           </div>
 
           <Link href="/register" className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded transition-colors text-center">
-            CREATE BUSINESS ACCOUNT
+            CREATE WHOLESALE ACCOUNT
           </Link>
           <Link href="/login" className="text-sm font-medium text-heading hover:text-brand transition-colors text-center">
             Sign In / My Account
@@ -301,6 +298,8 @@ export default function Header() {
           </div>
         </div>
       )}
+      <CartDrawer />
+      <Toast />
     </header>
   );
 }

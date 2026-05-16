@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -24,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} h-full`} suppressHydrationWarning>
-      <body className="min-h-full font-sans antialiased">{children}</body>
+      <body className="min-h-full font-sans antialiased">
+        <CartProvider>{children}</CartProvider>
+      </body>
     </html>
   );
 }

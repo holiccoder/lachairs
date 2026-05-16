@@ -363,6 +363,107 @@ export async function getCategoryLookup(): Promise<Record<string, CategoryInfo>>
 }
 
 /* -------------------------------------------------------------------------- */
+/*  B2B Company Registration                                                   */
+/* -------------------------------------------------------------------------- */
+
+export interface RegisterCompanyPayload {
+  companyName: string;
+  companyLegalName: string;
+  companyEmail: string;
+  businessType: string;
+  vatTaxId: string;
+  resellerId: string;
+  streetAddress: string;
+  streetAddress2: string;
+  city: string;
+  state: string;
+  zip: string;
+  country: string;
+  phone: string;
+  jobTitle: string;
+  adminEmail: string;
+  firstName: string;
+  lastName: string;
+  password: string;
+}
+
+export interface RegisterResult {
+  success: boolean;
+  customerId?: number;
+  error?: string;
+}
+
+const COUNTRY_CODES: Record<string, string> = {
+  "United States": "US",
+  Canada: "CA",
+};
+
+/**
+ * Registers a new wholesale customer via POST /V1/customers.
+ * Note: The Magento B2B Company module (Magento_Company) is not installed on
+ * this store, so we fall back to standard customer creation and store company
+ * details as custom_attributes.
+ */
+export async function registerCompany(
+  payload: RegisterCompanyPayload
+): Promise<RegisterResult> {
+  const countryId = COUNTRY_CODES[payload.country] ?? "US";
+
+  const body = {
+    customer: {
+      email: payload.adminEmail,
+      firstname: payload.firstName,
+      lastname: payload.lastName,
+      addresses: [
+        {
+          firstname: payload.firstName,
+          lastname: payload.lastName,
+          street: [
+            payload.streetAddress,
+            ...(payload.streetAddress2 ? [payload.streetAddress2] : []),
+          ],
+          city: payload.city,
+          region: { region_code: payload.state },
+          postcode: payload.zip,
+          country_id: countryId,
+          telephone: payload.phone,
+          default_billing: true,
+          default_shipping: true,
+        },
+      ],
+    },
+    password: payload.password,
+  };
+
+  try {
+    // Proxy through the Next.js route handler to avoid CORS issues with the
+    // remote Magento origin when called from the browser.
+    const res = await fetch("/api/register", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+
+    const data = await res.json().catch(() => ({ message: "Registration failed" }));
+
+    if (!res.ok) {
+      return { success: false, error: data.error || "Registration failed" };
+    }
+
+    if (typeof data?.id !== "number") {
+      return {
+        success: false,
+        error: "Registration response did not include a customer ID.",
+      };
+    }
+
+    return { success: true, customerId: data.id };
+  } catch {
+    return { success: false, error: "Network error. Please try again." };
+  }
+}
+
+/* -------------------------------------------------------------------------- */
 /*  Customer Auth                                                              */
 /* -------------------------------------------------------------------------- */
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { registerCompany } from "@/lib/magento";
 
 /* -------------------------------------------------------------------------- */
 /*  Data                                                                      */
@@ -121,10 +122,33 @@ export default function RegisterPage() {
     adminEmail: "",
     firstName: "",
     lastName: "",
+    password: "",
   });
+
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [customerId, setCustomerId] = useState<number | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    setError(null);
+
+    const result = await registerCompany(form);
+
+    setSubmitting(false);
+    if (result.success && typeof result.customerId === "number") {
+      setCustomerId(result.customerId);
+      setSuccess(true);
+    } else {
+      setCustomerId(null);
+      setError(result.error ?? "Registration failed. Please try again.");
+    }
   };
 
   return (
@@ -186,7 +210,23 @@ export default function RegisterPage() {
           {/*  Right Column — Registration Form                               */}
           {/* ============================================================== */}
           <div className="flex-1 min-w-0">
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-10">
+            {success ? (
+              <div className="rounded-lg border border-green-200 bg-green-50 p-8 text-center">
+                <svg viewBox="0 0 48 48" className="w-12 h-12 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="24" cy="24" r="20" />
+                  <path d="M14 24 L21 31 L34 17" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <h2 className="text-xl font-bold text-heading mb-2">Application Submitted!</h2>
+                <p className="text-sm text-body">
+                  Thank you, {form.firstName}. Our team will review your application and reach out to{" "}
+                  <strong>{form.adminEmail}</strong> within 1 business day.
+                </p>
+                {customerId !== null ? (
+                  <p className="text-xs text-gray-500 mt-3">Customer ID: {customerId}</p>
+                ) : null}
+              </div>
+            ) : (
+            <form onSubmit={handleSubmit} className="space-y-10">
               {/* Company Information */}
               <fieldset>
                 <legend className="text-base font-bold text-heading mb-5">
@@ -413,7 +453,7 @@ export default function RegisterPage() {
                       required
                     />
                   </div>
-                  <div>
+                   <div>
                     <label className="block text-sm font-semibold text-heading mb-1.5">
                       Last Name <span className="text-brand">*</span>
                     </label>
@@ -425,17 +465,38 @@ export default function RegisterPage() {
                       required
                     />
                   </div>
+                  <div className="sm:col-span-2">
+                    <label className="block text-sm font-semibold text-heading mb-1.5">
+                      Password <span className="text-brand">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      value={form.password}
+                      onChange={(e) => handleChange("password", e.target.value)}
+                      placeholder="Min. 8 characters"
+                      className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
+                      minLength={8}
+                      required
+                    />
+                  </div>
                 </div>
               </fieldset>
 
               {/* Submit */}
+              {error && (
+                <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-4 py-3">
+                  {error}
+                </p>
+              )}
               <button
                 type="submit"
-                className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-10 py-3 rounded transition-colors tracking-wide"
+                disabled={submitting}
+                className="bg-brand hover:bg-brand-dark disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold text-sm px-10 py-3 rounded transition-colors tracking-wide"
               >
-                SUBMIT
+                {submitting ? "SUBMITTING…" : "SUBMIT"}
               </button>
             </form>
+            )}
           </div>
         </div>
       </div>

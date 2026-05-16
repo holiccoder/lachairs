@@ -30,7 +30,7 @@ const heroSlides = [
     src: "/party.jpg",
     heading: "Trusted by Hospitality Leaders Nationwide",
     text: "Join hundreds of hotels, venues, and event planners who rely on Lachairs for quality, consistency, and on-time delivery.",
-    button: "CREATE BUSINESS ACCOUNT",
+    button: "CREATE WHOLESALE ACCOUNT",
     subtext: "Serving the US and Canada",
   },
 ];
@@ -361,7 +361,7 @@ export default function HomeClient({ products }: { products: Product[] }) {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide w-full sm:w-auto">
-                CREATE A BUSINESS ACCOUNT
+                CREATE A WHOLESALE ACCOUNT
               </button>
               <Link
                 href="/contact"

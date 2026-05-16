@@ -2,6 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/hooks/useAuth";
+import AddToCartButton from "@/components/cart/AddToCartButton";
+import QuantitySelector from "@/components/cart/QuantitySelector";
 
 interface ConfigOptionValue {
   value_index: number;
@@ -23,6 +27,7 @@ interface Image {
 }
 
 interface ProductData {
+  id: number;
   name: string;
   sku: string;
   status: number;
@@ -32,6 +37,18 @@ interface ProductData {
   images: Image[];
   description?: string;
   configurableOptions?: ConfigOption[];
+  configurableLinks?: number[];
+  price: number;
+  urlKey: string;
+  thumbnail: string;
+}
+
+function formatPrice(price: number): string {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 2,
+  }).format(price);
 }
 
 interface Props {
@@ -46,6 +63,47 @@ export default function ProductClient({ product }: Props) {
   );
 
   const thumbnails = product.images.slice(0, 6);
+
+  const { addItem } = useCart();
+  const { isLoggedIn } = useAuth();
+  const [quantity, setQuantity] = useState(1);
+  const [selectedOptions, setSelectedOptions] = useState<Record<string, number>>({});
+  const [isAdding, setIsAdding] = useState(false);
+
+  const hasOptions = product.configurableOptions && product.configurableOptions.length > 0;
+  const allOptionsSelected =
+    !hasOptions ||
+    product.configurableOptions!.every(
+      (opt) => selectedOptions[opt.attribute_id] !== undefined
+    );
+
+  const handleAddToCart = () => {
+    if (!allOptionsSelected || product.status !== 1) return;
+
+    setIsAdding(true);
+
+    const optionLabels: Record<string, string> = {};
+    if (hasOptions) {
+      product.configurableOptions!.forEach((opt) => {
+        optionLabels[opt.attribute_id] = opt.label;
+      });
+    }
+
+    addItem({
+      productId: product.id,
+      sku: product.sku,
+      name: product.name,
+      price: isLoggedIn ? product.price : 0,
+      quantity,
+      image: thumbnails[0]?.url ?? "",
+      selectedOptions: hasOptions ? { ...selectedOptions } : {},
+      optionLabels,
+      urlKey: product.urlKey || product.sku,
+      typeId: product.typeId,
+    });
+
+    setTimeout(() => setIsAdding(false), 600);
+  };
 
   const specs: { label: string; value: string }[] = [
     { label: "SKU", value: product.sku },
@@ -116,55 +174,87 @@ export default function ProductClient({ product }: Props) {
 
             <p className="text-sm text-body mb-5">Item #: {product.sku}</p>
 
-            <div className="flex items-center gap-4 mb-6">
-              <button className="flex items-center gap-1.5 text-sm text-body hover:text-brand transition-colors">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                </svg>
-                Add to Wish List
-              </button>
-              <button className="flex items-center gap-1.5 text-sm text-body hover:text-brand transition-colors">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="3" y="3" width="7" height="7" />
-                  <rect x="14" y="3" width="7" height="7" />
-                  <rect x="3" y="14" width="7" height="7" />
-                  <rect x="14" y="14" width="7" height="7" />
-                </svg>
-                Add to Compare
-              </button>
-            </div>
+            {/* Auth-aware price & add-to-cart */}
+            <div className="border-t border-gray-200 pt-6 mt-6">
+              {isLoggedIn ? (
+                <p className="text-2xl font-bold text-heading mb-5">
+                  {formatPrice(product.price)}
+                </p>
+              ) : (
+                <Link
+                  href="/login"
+                  className="inline-flex items-center gap-1.5 text-brand hover:text-brand-dark font-semibold text-lg transition-colors mb-5"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg>
+                  Login or Register to View Prices &amp; Options
+                </Link>
+              )}
 
-            <Link
-              href="/login"
-              className="inline-flex items-center gap-1.5 text-brand hover:text-brand-dark font-semibold text-lg transition-colors"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <rect x="3" y="11" width="18" height="11" rx="2" />
-                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-              </svg>
-              Login or Register to View Prices &amp; Options
-            </Link>
-
-            {product.configurableOptions && product.configurableOptions.length > 0 && (
-              <div className="mt-6 pt-6 border-t border-gray-200">
-                <h3 className="text-sm font-bold text-heading mb-3">Options</h3>
-                {product.configurableOptions.map((opt) => (
-                  <div key={opt.id} className="mb-3">
-                    <p className="text-sm font-semibold text-heading mb-1.5">{opt.label}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {opt.values.map((v) => (
-                        <span
-                          key={v.value_index}
-                          className="border border-gray-300 rounded px-3 py-1 text-xs text-body"
-                        >
-                          {v.value_index}
-                        </span>
-                      ))}
+              {/* Configurable options */}
+              {hasOptions && (
+                <div className="mb-5 space-y-4">
+                  {product.configurableOptions!.map((opt) => (
+                    <div key={opt.id}>
+                      <label className="block text-sm font-semibold text-heading mb-2">
+                        {opt.label}
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        {opt.values.map((v) => (
+                          <button
+                            key={v.value_index}
+                            type="button"
+                            onClick={() =>
+                              setSelectedOptions((prev) => ({
+                                ...prev,
+                                [opt.attribute_id]: v.value_index,
+                              }))
+                            }
+                            className={`px-4 py-2 text-sm border rounded transition-colors ${
+                              selectedOptions[opt.attribute_id] === v.value_index
+                                ? "border-brand bg-brand/5 text-brand font-medium"
+                                : "border-gray-300 text-body hover:border-gray-400"
+                            }`}
+                          >
+                            {v.value_index}
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              )}
+
+              {/* Quantity + Add to Cart */}
+              <div className="flex items-center gap-4">
+                <QuantitySelector
+                  value={quantity}
+                  onChange={setQuantity}
+                  min={1}
+                  disabled={!isLoggedIn}
+                />
+                {isLoggedIn ? (
+                  <AddToCartButton
+                    onClick={handleAddToCart}
+                    disabled={!allOptionsSelected || product.status !== 1}
+                    loading={isAdding}
+                  />
+                ) : (
+                  <Link
+                    href="/login"
+                    className="w-full bg-gray-300 text-gray-500 text-center font-semibold text-sm px-8 py-3 rounded cursor-pointer tracking-wide"
+                  >
+                    Sign in to Place Orders
+                  </Link>
+                )}
               </div>
-            )}
+
+              {product.status !== 1 && (
+                <p className="mt-3 text-sm text-red-600 font-medium">This item is currently out of stock.</p>
+              )}
+            </div>
           </div>
         </div>
       </div>

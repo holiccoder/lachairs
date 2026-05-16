@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 const faqs = [
   {
     q: "How do I create a business account?",
-    a: "Click 'CREATE BUSINESS ACCOUNT' in the header or visit the registration page. Fill out your company details and submit. Our team reviews applications within 1 business day and you'll receive an email once approved.",
+    a: "Click 'CREATE WHOLESALE ACCOUNT' in the header or visit the registration page. Fill out your company details and submit. Our team reviews applications within 1 business day and you'll receive an email once approved.",
   },
   {
     q: "Who can register for a wholesale account?",

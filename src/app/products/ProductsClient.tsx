@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { Product, CategoryInfo } from "@/lib/magento";
+import { useCart } from "@/context/CartContext";
+import { useAuth } from "@/hooks/useAuth";
 
 /* -------------------------------------------------------------------------- */
 /*  Sub-components                                                            */
@@ -82,6 +84,9 @@ export default function ProductsClient({
     brand: true,
   });
   const [checkedFilters, setCheckedFilters] = useState<Record<string, boolean>>({});
+
+  const { addItem } = useCart();
+  const { isLoggedIn } = useAuth();
 
   const toggleFilter = (key: string) => {
     setExpandedFilters((prev) => ({ ...prev, [key]: !prev[key] }));
@@ -424,38 +429,86 @@ export default function ProductsClient({
             {/* Product Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               {displayed.map((product) => (
-                <Link
+                <div
                   key={product.id}
-                  href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
-                  className="bg-white border border-gray-100 rounded-lg overflow-hidden group hover:shadow-md transition-shadow"
+                  className="bg-white border border-gray-100 rounded-lg overflow-hidden group hover:shadow-md transition-shadow flex flex-col"
                 >
-                  {/* Image */}
-                  <div className="aspect-square bg-gray-50 relative overflow-hidden">
-                    {product.thumbnail ? (
-                      <img
-                        src={product.thumbnail}
-                        alt={product.name}
-                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center text-gray-300">
-                        <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth="1">
-                          <rect x="6" y="10" width="36" height="28" rx="2" />
-                          <circle cx="17" cy="20" r="3" />
-                          <path d="M6 30 L18 22 L26 28 L36 18 L42 22 L42 38 L6 38Z" strokeLinejoin="round" />
-                        </svg>
-                      </div>
-                    )}
-                  </div>
+                  {/* Image — navigable */}
+                  <Link
+                    href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
+                    className="block"
+                  >
+                    <div className="aspect-square bg-gray-50 relative overflow-hidden">
+                      {product.thumbnail ? (
+                        <img
+                          src={product.thumbnail}
+                          alt={product.name}
+                          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        />
+                      ) : (
+                        <div className="w-full h-full flex items-center justify-center text-gray-300">
+                          <svg viewBox="0 0 48 48" className="w-12 h-12" fill="none" stroke="currentColor" strokeWidth="1">
+                            <rect x="6" y="10" width="36" height="28" rx="2" />
+                            <circle cx="17" cy="20" r="3" />
+                            <path d="M6 30 L18 22 L26 28 L36 18 L42 22 L42 38 L6 38Z" strokeLinejoin="round" />
+                          </svg>
+                        </div>
+                      )}
+                    </div>
+                  </Link>
 
                   {/* Details */}
-                  <div className="p-4">
-                    <h3 className="text-sm text-body leading-snug mb-1 line-clamp-2">
-                      {product.name}
-                    </h3>
-                    <p className="text-xs text-gray-400">{product.sku}</p>
+                  <div className="p-4 flex flex-col flex-1">
+                    <Link
+                      href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
+                      className="block flex-1"
+                    >
+                      <h3 className="text-sm text-body leading-snug mb-1 line-clamp-2 group-hover:text-heading transition-colors">
+                        {product.name}
+                      </h3>
+                      <p className="text-xs text-gray-400">{product.sku}</p>
+                    </Link>
+
+                    {/* Quick Add to Cart */}
+                    <div className="mt-3">
+                      {product.typeId === "configurable" ? (
+                        <Link
+                          href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
+                          className="block w-full text-center text-xs text-brand border border-brand/30 rounded py-1.5 hover:bg-brand hover:text-white transition-colors"
+                        >
+                          Select Options
+                        </Link>
+                      ) : (
+                        <button
+                          onClick={(e) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            addItem({
+                              productId: product.id,
+                              sku: product.sku,
+                              name: product.name,
+                              price: isLoggedIn ? product.price : 0,
+                              quantity: 1,
+                              image: product.thumbnail,
+                              selectedOptions: {},
+                              optionLabels: {},
+                              urlKey: product.urlKey || product.sku,
+                              typeId: product.typeId,
+                            });
+                          }}
+                          className={`w-full text-center text-xs rounded py-1.5 transition-colors ${
+                            product.status !== 1
+                              ? "bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200"
+                              : "text-brand border border-brand/30 hover:bg-brand hover:text-white"
+                          }`}
+                          disabled={product.status !== 1}
+                        >
+                          {product.status !== 1 ? "Out of Stock" : "Add to Cart"}
+                        </button>
+                      )}
+                    </div>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
 
