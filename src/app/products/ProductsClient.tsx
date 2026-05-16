@@ -470,43 +470,45 @@ export default function ProductsClient({
                     </Link>
 
                     {/* Quick Add to Cart */}
-                    <div className="mt-3">
-                      {product.typeId === "configurable" ? (
-                        <Link
-                          href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
-                          className="block w-full text-center text-xs text-brand border border-brand/30 rounded py-1.5 hover:bg-brand hover:text-white transition-colors"
-                        >
-                          Select Options
-                        </Link>
-                      ) : (
-                        <button
-                          onClick={(e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            addItem({
-                              productId: product.id,
-                              sku: product.sku,
-                              name: product.name,
-                              price: isLoggedIn ? product.price : 0,
-                              quantity: 1,
-                              image: product.thumbnail,
-                              selectedOptions: {},
-                              optionLabels: {},
-                              urlKey: product.urlKey || product.sku,
-                              typeId: product.typeId,
-                            });
-                          }}
-                          className={`w-full text-center text-xs rounded py-1.5 transition-colors ${
-                            product.status !== 1
-                              ? "bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200"
-                              : "text-brand border border-brand/30 hover:bg-brand hover:text-white"
-                          }`}
-                          disabled={product.status !== 1}
-                        >
-                          {product.status !== 1 ? "Out of Stock" : "Add to Cart"}
-                        </button>
-                      )}
-                    </div>
+                    {isLoggedIn && (
+                      <div className="mt-3">
+                        {product.typeId === "configurable" ? (
+                          <Link
+                            href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
+                            className="block w-full text-center text-xs text-brand border border-brand/30 rounded py-1.5 hover:bg-brand hover:text-white transition-colors"
+                          >
+                            Select Options
+                          </Link>
+                        ) : (
+                          <button
+                            onClick={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              addItem({
+                                productId: product.id,
+                                sku: product.sku,
+                                name: product.name,
+                                price: isLoggedIn ? product.price : 0,
+                                quantity: 1,
+                                image: product.thumbnail,
+                                selectedOptions: {},
+                                optionLabels: {},
+                                urlKey: product.urlKey || product.sku,
+                                typeId: product.typeId,
+                              });
+                            }}
+                            className={`w-full text-center text-xs rounded py-1.5 transition-colors ${
+                              product.status !== 1
+                                ? "bg-gray-100 text-gray-400 cursor-not-allowed border border-gray-200"
+                                : "text-brand border border-brand/30 hover:bg-brand hover:text-white"
+                            }`}
+                            disabled={product.status !== 1}
+                          >
+                            {product.status !== 1 ? "Out of Stock" : "Add to Cart"}
+                          </button>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}

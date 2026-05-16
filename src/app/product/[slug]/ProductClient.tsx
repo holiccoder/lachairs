@@ -194,7 +194,7 @@ export default function ProductClient({ product }: Props) {
               )}
 
               {/* Configurable options */}
-              {hasOptions && (
+              {isLoggedIn && hasOptions && (
                 <div className="mb-5 space-y-4">
                   {product.configurableOptions!.map((opt) => (
                     <div key={opt.id}>
@@ -228,31 +228,25 @@ export default function ProductClient({ product }: Props) {
               )}
 
               {/* Quantity + Add to Cart */}
-              <div className="flex items-center gap-4">
-                <QuantitySelector
-                  value={quantity}
-                  onChange={setQuantity}
-                  min={1}
-                  disabled={!isLoggedIn}
-                />
-                {isLoggedIn ? (
-                  <AddToCartButton
-                    onClick={handleAddToCart}
-                    disabled={!allOptionsSelected || product.status !== 1}
-                    loading={isAdding}
-                  />
-                ) : (
-                  <Link
-                    href="/login"
-                    className="w-full bg-gray-300 text-gray-500 text-center font-semibold text-sm px-8 py-3 rounded cursor-pointer tracking-wide"
-                  >
-                    Sign in to Place Orders
-                  </Link>
-                )}
-              </div>
+              {isLoggedIn && (
+                <>
+                  <div className="flex items-center gap-4">
+                    <QuantitySelector
+                      value={quantity}
+                      onChange={setQuantity}
+                      min={1}
+                    />
+                    <AddToCartButton
+                      onClick={handleAddToCart}
+                      disabled={!allOptionsSelected || product.status !== 1}
+                      loading={isAdding}
+                    />
+                  </div>
 
-              {product.status !== 1 && (
-                <p className="mt-3 text-sm text-red-600 font-medium">This item is currently out of stock.</p>
+                  {product.status !== 1 && (
+                    <p className="mt-3 text-sm text-red-600 font-medium">This item is currently out of stock.</p>
+                  )}
+                </>
               )}
             </div>
           </div>
