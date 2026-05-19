@@ -10,7 +10,11 @@ export async function POST(req: NextRequest) {
     }
 
     const body = (await req.json()) as {
-      items: { sku: string; qty: number }[];
+      items: {
+        sku: string;
+        qty: number;
+        selectedOptions?: { optionId: string; optionValue: number }[];
+      }[];
       shippingAddress: {
         firstname: string;
         lastname: string;
@@ -46,16 +50,27 @@ export async function POST(req: NextRequest) {
 
     // Step 2: Add items
     for (const item of body.items) {
+      const cartItem: Record<string, unknown> = {
+        sku: item.sku,
+        qty: item.qty,
+        quote_id: quoteId,
+      };
+
+      if (item.selectedOptions && item.selectedOptions.length > 0) {
+        cartItem.product_option = {
+          extension_attributes: {
+            configurable_item_options: item.selectedOptions.map((opt) => ({
+              option_id: opt.optionId,
+              option_value: opt.optionValue,
+            })),
+          },
+        };
+      }
+
       const itemRes = await fetch(`${API_BASE}carts/mine/items`, {
         method: "POST",
         headers: authHeaders,
-        body: JSON.stringify({
-          cartItem: {
-            sku: item.sku,
-            qty: item.qty,
-            quote_id: quoteId,
-          },
-        }),
+        body: JSON.stringify({ cartItem }),
       });
       if (!itemRes.ok) {
         const err = await itemRes.json().catch(() => ({ message: "Failed to add item" }));

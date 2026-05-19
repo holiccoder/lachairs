@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/hooks/useAuth";
-import { placeOrder } from "@/lib/magento";
+import { placeOrder, getCustomerProfile } from "@/lib/magento";
 
 const usStates = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
@@ -57,6 +57,26 @@ export default function CheckoutPage() {
     }
   }, [auth.hydrated, auth.isLoggedIn, items.length, router, orderPlaced]);
 
+  useEffect(() => {
+    if (!auth.token) return;
+    getCustomerProfile(auth.token).then((profile) => {
+      if (!profile) return;
+      const addr = profile.addresses?.find(
+        (a) => a.default_shipping || a.default_billing
+      ) || profile.addresses?.[0];
+      if (!addr) return;
+      setShipping({
+        firstname: addr.firstname || auth.firstName || "",
+        lastname: addr.lastname || auth.lastName || "",
+        street: Array.isArray(addr.street) ? addr.street.join(", ") : (addr.street || ""),
+        city: addr.city || "",
+        state: addr.region?.region_code || "",
+        zip: addr.postcode || "",
+        phone: addr.telephone || "",
+      });
+    }).catch(() => {});
+  }, [auth.token, auth.firstName, auth.lastName]);
+
   const handleField = (field: string, value: string) => {
     setShipping((s) => ({ ...s, [field]: value }));
   };
@@ -73,7 +93,14 @@ export default function CheckoutPage() {
     }
 
     const result = await placeOrder(auth.token, {
-      items: items.map((i) => ({ sku: i.sku, qty: i.quantity })),
+      items: items.map((i) => ({
+        sku: i.sku,
+        qty: i.quantity,
+        selectedOptions: Object.entries(i.selectedOptions).map(([optionId, optionValue]) => ({
+          optionId,
+          optionValue,
+        })),
+      })),
       shippingAddress: {
         firstname: shipping.firstname,
         lastname: shipping.lastname,

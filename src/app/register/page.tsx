@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { registerCompany, loginCustomer } from "@/lib/magento";
-import { setAuthData } from "@/hooks/useAuth";
+import { useAuth, setAuthData } from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
 
 /* -------------------------------------------------------------------------- */
@@ -109,6 +109,8 @@ const howItWorksSteps = [
 
 export default function RegisterPage() {
   const router = useRouter();
+  const auth = useAuth();
+
   const [form, setForm] = useState({
     companyName: "",
     companyLegalName: "",
@@ -128,6 +130,7 @@ export default function RegisterPage() {
     firstName: "",
     lastName: "",
     password: "",
+    passwordConfirm: "",
   });
 
   const [submitting, setSubmitting] = useState(false);
@@ -135,12 +138,27 @@ export default function RegisterPage() {
   const [customerId, setCustomerId] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (auth.hydrated && auth.isLoggedIn) {
+      router.replace("/dashboard");
+    }
+  }, [auth.hydrated, auth.isLoggedIn, router]);
+
+  if (!auth.hydrated) return null;
+  if (auth.isLoggedIn) return null;
+
   const handleChange = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (form.password !== form.passwordConfirm) {
+      setError("Passwords do not match.");
+      return;
+    }
+
     setSubmitting(true);
     setError(null);
 
@@ -478,13 +496,13 @@ export default function RegisterPage() {
                   </div>
                   <div className="sm:col-span-2">
                     <label className="block text-sm font-semibold text-heading mb-1.5">
-                      Password <span className="text-brand">*</span>
+                      Login Password <span className="text-brand">*</span>
                     </label>
                     <input
                       type="password"
                       value={form.password}
                       onChange={(e) => handleChange("password", e.target.value)}
-                       placeholder={`Min. ${passwordMinLength} characters`}
+                      placeholder="Setup login password"
                       className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
                        minLength={passwordMinLength}
                       required
@@ -492,6 +510,20 @@ export default function RegisterPage() {
                      <p className="mt-1.5 text-xs text-body">
                        Passwords only need to be at least {passwordMinLength} characters long.
                      </p>
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label className="block text-sm font-semibold text-heading mb-1.5">
+                      Confirm Password <span className="text-brand">*</span>
+                    </label>
+                    <input
+                      type="password"
+                      value={form.passwordConfirm}
+                      onChange={(e) => handleChange("passwordConfirm", e.target.value)}
+                      placeholder="Re-enter login password"
+                      className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
+                      minLength={passwordMinLength}
+                      required
+                    />
                   </div>
                 </div>
               </fieldset>

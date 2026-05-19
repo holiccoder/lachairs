@@ -597,7 +597,11 @@ export async function getCustomerOrders(token: string): Promise<CustomerOrder[]>
 }
 
 export interface PlaceOrderPayload {
-  items: { sku: string; qty: number }[];
+  items: {
+    sku: string;
+    qty: number;
+    selectedOptions?: { optionId: string; optionValue: number }[];
+  }[];
   shippingAddress: {
     firstname: string;
     lastname: string;
