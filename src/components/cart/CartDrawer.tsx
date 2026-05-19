@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/hooks/useAuth";
@@ -15,6 +16,7 @@ function formatPrice(price: number): string {
 }
 
 export default function CartDrawer() {
+  const router = useRouter();
   const {
     items,
     isDrawerOpen,
@@ -169,7 +171,14 @@ export default function CartDrawer() {
                   View Cart
                 </Link>
                 {isLoggedIn ? (
-                  <button className="w-full bg-heading hover:bg-gray-800 text-white font-semibold text-sm py-2.5 rounded transition-colors tracking-wide">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      toggleDrawer(false);
+                      router.push("/checkout");
+                    }}
+                    className="w-full bg-heading hover:bg-gray-800 text-white font-semibold text-sm py-2.5 rounded transition-colors tracking-wide"
+                  >
                     Checkout
                   </button>
                 ) : (

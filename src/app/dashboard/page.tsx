@@ -19,6 +19,14 @@ export default function DashboardPage() {
   const router = useRouter();
   const auth = useAuth();
   const [tab, setTab] = useState<Tab>("profile");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const tabParam = params.get("tab");
+    if (tabParam === "profile" || tabParam === "orders") {
+      setTab(tabParam);
+    }
+  }, []);
   const [profile, setProfile] = useState<CustomerProfile | null>(null);
   const [orders, setOrders] = useState<CustomerOrder[]>([]);
   const [loading, setLoading] = useState(true);

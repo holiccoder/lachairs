@@ -595,3 +595,46 @@ export async function getCustomerOrders(token: string): Promise<CustomerOrder[]>
     return [];
   }
 }
+
+export interface PlaceOrderPayload {
+  items: { sku: string; qty: number }[];
+  shippingAddress: {
+    firstname: string;
+    lastname: string;
+    street: string[];
+    city: string;
+    region_code: string;
+    postcode: string;
+    country_id: string;
+    telephone: string;
+  };
+}
+
+export interface PlaceOrderResult {
+  success: boolean;
+  orderId?: string;
+  error?: string;
+}
+
+export async function placeOrder(
+  token: string,
+  payload: PlaceOrderPayload
+): Promise<PlaceOrderResult> {
+  try {
+    const res = await fetch("/api/checkout", {
+      method: "POST",
+      headers: {
+        "x-customer-token": token,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      return { success: false, error: data.error || "Failed to place order" };
+    }
+    return { success: true, orderId: data.orderId };
+  } catch {
+    return { success: false, error: "Network error. Please try again." };
+  }
+}

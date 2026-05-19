@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useCart } from "@/context/CartContext";
@@ -16,6 +17,7 @@ function formatPrice(price: number): string {
 }
 
 export default function CartPage() {
+  const router = useRouter();
   const { items, itemCount, subtotal, updateQuantity, removeItem, clearCart } =
     useCart();
   const { isLoggedIn } = useAuth();
@@ -212,7 +214,11 @@ export default function CartPage() {
                 </p>
 
                 {isLoggedIn ? (
-                  <button className="w-full bg-heading hover:bg-gray-800 text-white font-semibold text-sm py-3 rounded transition-colors tracking-wide">
+                  <button
+                    type="button"
+                    onClick={() => router.push("/checkout")}
+                    className="w-full bg-heading hover:bg-gray-800 text-white font-semibold text-sm py-3 rounded transition-colors tracking-wide"
+                  >
                     Proceed to Checkout
                   </button>
                 ) : (
