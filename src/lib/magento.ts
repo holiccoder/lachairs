@@ -478,20 +478,120 @@ export async function loginCustomer(
   password: string
 ): Promise<LoginResult> {
   try {
-    const res = await fetch(`${API_BASE}integration/customer/token`, {
+    const res = await fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ username: email, password }),
+      body: JSON.stringify({ email, password }),
     });
 
     if (!res.ok) {
-      const err = await res.json().catch(() => ({ message: "Login failed" }));
-      return { success: false, error: err.message || "Login failed" };
+      const err = await res.json().catch(() => ({ error: "Login failed" }));
+      return { success: false, error: err.error || "Login failed" };
     }
 
-    const token = await res.json();
-    return { success: true, token: typeof token === "string" ? token : String(token) };
+    const data = await res.json();
+
+    if (typeof data?.token !== "string" || !data.token) {
+      return { success: false, error: "Login response did not include a token." };
+    }
+
+    return { success: true, token: data.token };
   } catch {
     return { success: false, error: "Network error. Please try again." };
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Customer Profile & Orders (customer-token authenticated)                    */
+/* -------------------------------------------------------------------------- */
+
+export interface CustomerProfile {
+  id: number;
+  email: string;
+  firstname: string;
+  lastname: string;
+  addresses: {
+    id: number;
+    firstname: string;
+    lastname: string;
+    street: string[];
+    city: string;
+    region: { region_code: string; region: string };
+    postcode: string;
+    country_id: string;
+    telephone: string;
+    default_billing: boolean;
+    default_shipping: boolean;
+  }[];
+}
+
+export interface CustomerOrder {
+  entity_id: number;
+  increment_id: string;
+  created_at: string;
+  grand_total: number;
+  status: string;
+  order_currency_code: string;
+  total_item_count: number;
+  items: {
+    name: string;
+    sku: string;
+    qty_ordered: number;
+    price: number;
+  }[];
+}
+
+async function customerFetch<T>(endpoint: string, token: string, options?: RequestInit): Promise<T> {
+  const res = await fetch(endpoint, {
+    ...options,
+    headers: {
+      "x-customer-token": token,
+      "Content-Type": "application/json",
+      ...(options?.headers || {}),
+    },
+  });
+  if (!res.ok) throw new Error(`API error ${res.status}`);
+  return res.json();
+}
+
+export async function getCustomerProfile(token: string): Promise<CustomerProfile | null> {
+  try {
+    return await customerFetch<CustomerProfile>("/api/customer/profile", token);
+  } catch {
+    return null;
+  }
+}
+
+export async function updateCustomerProfile(
+  token: string,
+  data: { firstname: string; lastname: string; email: string }
+): Promise<boolean> {
+  try {
+    const body = {
+      customer: {
+        email: data.email,
+        firstname: data.firstname,
+        lastname: data.lastname,
+      },
+    };
+    await customerFetch("/api/customer/profile", token, {
+      method: "PUT",
+      body: JSON.stringify(body),
+    });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export async function getCustomerOrders(token: string): Promise<CustomerOrder[]> {
+  try {
+    const data = await customerFetch<{ items: CustomerOrder[] }>(
+      "/api/customer/orders",
+      token
+    );
+    return data.items || [];
+  } catch {
+    return [];
   }
 }

@@ -4,7 +4,12 @@
       "Bash(git remote *)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(Get-ChildItem -Directory src/types, src/hooks, src/context, src/components/cart -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object FullName)",
+      "PowerShell(New-Item *)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)"
     ]
   }
 }

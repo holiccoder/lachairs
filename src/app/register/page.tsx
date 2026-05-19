@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { registerCompany } from "@/lib/magento";
+import { registerCompany, loginCustomer } from "@/lib/magento";
+import { setAuthData } from "@/hooks/useAuth";
+import { useRouter } from "next/navigation";
 
 /* -------------------------------------------------------------------------- */
 /*  Data                                                                      */
@@ -29,6 +31,8 @@ const usStates = [
   "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC",
   "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY",
 ];
+
+const passwordMinLength = 8;
 
 const whyRegisterItems = [
   {
@@ -104,6 +108,7 @@ const howItWorksSteps = [
 /* -------------------------------------------------------------------------- */
 
 export default function RegisterPage() {
+  const router = useRouter();
   const [form, setForm] = useState({
     companyName: "",
     companyLegalName: "",
@@ -144,7 +149,13 @@ export default function RegisterPage() {
     setSubmitting(false);
     if (result.success && typeof result.customerId === "number") {
       setCustomerId(result.customerId);
-      setSuccess(true);
+      const loginResult = await loginCustomer(form.adminEmail, form.password);
+      if (loginResult.success) {
+        setAuthData(loginResult.token!, form.adminEmail, form.firstName, form.lastName);
+        router.push("/dashboard");
+      } else {
+        setSuccess(true);
+      }
     } else {
       setCustomerId(null);
       setError(result.error ?? "Registration failed. Please try again.");
@@ -473,11 +484,14 @@ export default function RegisterPage() {
                       type="password"
                       value={form.password}
                       onChange={(e) => handleChange("password", e.target.value)}
-                      placeholder="Min. 8 characters"
+                       placeholder={`Min. ${passwordMinLength} characters`}
                       className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
-                      minLength={8}
+                       minLength={passwordMinLength}
                       required
                     />
+                     <p className="mt-1.5 text-xs text-body">
+                       Passwords only need to be at least {passwordMinLength} characters long.
+                     </p>
                   </div>
                 </div>
               </fieldset>

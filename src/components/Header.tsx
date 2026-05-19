@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import type { Category } from "@/lib/magento";
+import { useAuth } from "@/hooks/useAuth";
 import CartIconButton from "@/components/cart/CartIconButton";
 import CartDrawer from "@/components/cart/CartDrawer";
 import Toast from "@/components/cart/Toast";
@@ -16,19 +17,42 @@ import Toast from "@/components/cart/Toast";
 export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
+  const auth = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [accountMenuOpen, setAccountMenuOpen] = useState(false);
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
   const [activeMegaCategory, setActiveMegaCategory] = useState(0);
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [categories, setCategories] = useState<Category[]>([]);
   const megaCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const accountCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const accountMenuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMobileMenuOpen(false);
     setMobileCategoryOpen(false);
     setMegaMenuOpen(false);
+    setAccountMenuOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const onDocumentClick = (event: MouseEvent) => {
+      if (!accountMenuRef.current) return;
+      if (!accountMenuRef.current.contains(event.target as Node)) {
+        setAccountMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", onDocumentClick);
+    return () => {
+      document.removeEventListener("mousedown", onDocumentClick);
+      if (accountCloseTimer.current) {
+        clearTimeout(accountCloseTimer.current);
+      }
+    };
+  }, []);
 
   useEffect(() => {
     fetch("/api/categories")
@@ -55,6 +79,18 @@ export default function Header() {
 
   const closeMegaMenu = useCallback(() => {
     megaCloseTimer.current = setTimeout(() => setMegaMenuOpen(false), 200);
+  }, []);
+
+  const openAccountMenu = useCallback(() => {
+    if (accountCloseTimer.current) {
+      clearTimeout(accountCloseTimer.current);
+      accountCloseTimer.current = null;
+    }
+    setAccountMenuOpen(true);
+  }, []);
+
+  const closeAccountMenu = useCallback(() => {
+    accountCloseTimer.current = setTimeout(() => setAccountMenuOpen(false), 160);
   }, []);
 
   return (
@@ -113,12 +149,59 @@ export default function Header() {
 
         {/* Account & Cart */}
         <div className="hidden lg:flex items-center gap-4 shrink-0">
-          <Link href="/login" className="flex items-center gap-1 text-sm text-body hover:text-heading transition-colors">
-            <span>Hello Guest / My Account</span>
-            <svg className="w-3 h-3 mt-px" viewBox="0 0 12 12" fill="currentColor">
-              <path d="M3 5 L6 8 L9 5" />
-            </svg>
-          </Link>
+          {auth.isLoggedIn ? (
+            <div
+              ref={accountMenuRef}
+              className="relative"
+              onMouseEnter={openAccountMenu}
+              onMouseLeave={closeAccountMenu}
+            >
+              <button
+                type="button"
+                onClick={() => setAccountMenuOpen((prev) => !prev)}
+                className="flex items-center gap-1 text-sm text-body hover:text-heading transition-colors"
+                aria-haspopup="menu"
+                aria-expanded={accountMenuOpen}
+              >
+                <span>Hello, {auth.firstName || "Account"}</span>
+                <svg className="w-3 h-3 mt-px" viewBox="0 0 12 12" fill="currentColor">
+                  <path d="M3 5 L6 8 L9 5" />
+                </svg>
+              </button>
+
+              {accountMenuOpen ? (
+                <div className="absolute right-0 top-full pt-2 z-50" onMouseEnter={openAccountMenu}>
+                  <div className="w-44 rounded-md border border-gray-200 bg-white shadow-lg py-1">
+                    <Link
+                      href="/dashboard"
+                      className="block px-4 py-2 text-sm text-heading hover:bg-gray-50"
+                      onClick={() => setAccountMenuOpen(false)}
+                    >
+                      My Account
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        auth.logout();
+                        setAccountMenuOpen(false);
+                        router.push("/");
+                      }}
+                      className="block w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : (
+            <Link href="/login" className="flex items-center gap-1 text-sm text-body hover:text-heading transition-colors">
+              <span>Hello Guest / Sign In</span>
+              <svg className="w-3 h-3 mt-px" viewBox="0 0 12 12" fill="currentColor">
+                <path d="M3 5 L6 8 L9 5" />
+              </svg>
+            </Link>
+          )}
           <CartIconButton />
         </div>
 
@@ -204,9 +287,15 @@ export default function Header() {
           <Link href="/register" className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded transition-colors text-center">
             CREATE WHOLESALE ACCOUNT
           </Link>
-          <Link href="/login" className="text-sm font-medium text-heading hover:text-brand transition-colors text-center">
-            Sign In / My Account
-          </Link>
+          {auth.isLoggedIn ? (
+            <Link href="/dashboard" className="text-sm font-medium text-heading hover:text-brand transition-colors text-center">
+              My Account
+            </Link>
+          ) : (
+            <Link href="/login" className="text-sm font-medium text-heading hover:text-brand transition-colors text-center">
+              Sign In / My Account
+            </Link>
+          )}
           <form onSubmit={handleSearch} className="flex items-center border border-gray-200 rounded px-3 py-2 gap-2">
             <button type="submit" aria-label="Search">
               <svg className="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { loginCustomer } from "@/lib/magento";
+import { loginCustomer, getCustomerProfile } from "@/lib/magento";
+import { setAuthData } from "@/hooks/useAuth";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -29,9 +30,9 @@ export default function LoginPage() {
     setLoading(false);
 
     if (result.success) {
-      localStorage.setItem("customer_token", result.token!);
-      localStorage.setItem("customer_email", email);
-      router.push("/");
+      const profile = await getCustomerProfile(result.token!);
+      setAuthData(result.token!, email, profile?.firstname, profile?.lastname);
+      router.push("/dashboard");
     } else {
       setError(result.error || "Login failed. Please try again.");
     }
