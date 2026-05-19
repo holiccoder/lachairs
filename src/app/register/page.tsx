@@ -114,7 +114,6 @@ export default function RegisterPage() {
   const [form, setForm] = useState({
     companyName: "",
     companyLegalName: "",
-    companyEmail: "",
     businessType: "",
     vatTaxId: "",
     resellerId: "",
@@ -133,6 +132,7 @@ export default function RegisterPage() {
     passwordConfirm: "",
   });
 
+  const [showPassword, setShowPassword] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [customerId, setCustomerId] = useState<number | null>(null);
@@ -283,19 +283,6 @@ export default function RegisterPage() {
                       value={form.companyLegalName}
                       onChange={(e) => handleChange("companyLegalName", e.target.value)}
                       className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-heading mb-1.5">
-                      Company Email <span className="text-brand">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      value={form.companyEmail}
-                      onChange={(e) => handleChange("companyEmail", e.target.value)}
-                      placeholder="info@yourcompany.com"
-                      className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
-                      required
                     />
                   </div>
                   <div>
@@ -498,15 +485,35 @@ export default function RegisterPage() {
                     <label className="block text-sm font-semibold text-heading mb-1.5">
                       Login Password <span className="text-brand">*</span>
                     </label>
-                    <input
-                      type="password"
-                      value={form.password}
-                      onChange={(e) => handleChange("password", e.target.value)}
-                      placeholder="Setup login password"
-                      className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
-                       minLength={passwordMinLength}
-                      required
-                    />
+                    <div className="relative">
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        value={form.password}
+                        onChange={(e) => handleChange("password", e.target.value)}
+                        placeholder="Login password"
+                        className="w-full border border-gray-300 rounded px-4 py-2.5 pr-10 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
+                        minLength={passwordMinLength}
+                        required
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassword((p) => !p)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-heading transition-colors"
+                        aria-label={showPassword ? "Hide password" : "Show password"}
+                      >
+                        {showPassword ? (
+                          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                            <line x1="1" y1="1" x2="23" y2="23" />
+                          </svg>
+                        ) : (
+                          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                          </svg>
+                        )}
+                      </button>
+                    </div>
                      <p className="mt-1.5 text-xs text-body">
                        Passwords only need to be at least {passwordMinLength} characters long.
                      </p>
@@ -515,15 +522,35 @@ export default function RegisterPage() {
                     <label className="block text-sm font-semibold text-heading mb-1.5">
                       Confirm Password <span className="text-brand">*</span>
                     </label>
-                    <input
-                      type="password"
-                      value={form.passwordConfirm}
-                      onChange={(e) => handleChange("passwordConfirm", e.target.value)}
-                      placeholder="Re-enter login password"
-                      className="w-full border border-gray-300 rounded px-4 py-2.5 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
-                      minLength={passwordMinLength}
-                      required
-                    />
+                    <div className="relative">
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        value={form.passwordConfirm}
+                        onChange={(e) => handleChange("passwordConfirm", e.target.value)}
+                        placeholder="Re-enter login password"
+                        className="w-full border border-gray-300 rounded px-4 py-2.5 pr-10 text-sm text-heading placeholder-gray-400 outline-none focus:border-brand transition-colors"
+                        minLength={passwordMinLength}
+                        required
+                      />
+                      <button
+                        type="button"
+                        onClick={() => setShowPassword((p) => !p)}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-heading transition-colors"
+                        aria-label={showPassword ? "Hide password" : "Show password"}
+                      >
+                        {showPassword ? (
+                          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                            <line x1="1" y1="1" x2="23" y2="23" />
+                          </svg>
+                        ) : (
+                          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                          </svg>
+                        )}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </fieldset>

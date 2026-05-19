@@ -463,7 +463,7 @@ export default function ProductsClient({
                       href={`/product/${encodeURIComponent(product.urlKey || product.sku)}`}
                       className="block flex-1"
                     >
-                      <h3 className="text-sm text-body leading-snug mb-1 line-clamp-2 group-hover:text-heading transition-colors">
+                      <h3 className="text-base font-medium text-heading leading-snug mb-1 line-clamp-2 group-hover:text-brand transition-colors">
                         {product.name}
                       </h3>
                       <p className="text-xs text-gray-400">{product.sku}</p>

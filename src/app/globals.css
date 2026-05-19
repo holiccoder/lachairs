@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+html {
+  font-size: 18px !important;
+}
+body {
+  font-size: 1.125rem;
+}
+
 @theme inline {
   --font-sans: var(--font-poppins);
   --color-brand: #D81B60;

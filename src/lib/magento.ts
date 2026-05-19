@@ -369,7 +369,6 @@ export async function getCategoryLookup(): Promise<Record<string, CategoryInfo>>
 export interface RegisterCompanyPayload {
   companyName: string;
   companyLegalName: string;
-  companyEmail: string;
   businessType: string;
   vatTaxId: string;
   resellerId: string;

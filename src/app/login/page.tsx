@@ -45,7 +45,7 @@ export default function LoginPage() {
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12 py-16 w-full">
         <div className="max-w-md mx-auto">
           <h1 className="text-2xl md:text-3xl font-bold text-heading mb-2 text-center">
-            Business Account Login
+            Wholesale Account Login
           </h1>
           <p className="text-sm text-body text-center mb-8">
             Sign in to access wholesale pricing, order tracking, and account tools.
@@ -131,7 +131,7 @@ export default function LoginPage() {
           </form>
 
           <p className="text-sm text-body text-center mt-6">
-            Don&apos;t have a business account?{" "}
+            Don&apos;t have a wholesale account?{" "}
             <Link href="/register" className="text-brand hover:text-brand-dark font-semibold transition-colors">
               Apply for a Wholesale Account
             </Link>

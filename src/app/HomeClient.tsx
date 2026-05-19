@@ -409,7 +409,7 @@ export default function HomeClient({ products }: { products: Product[] }) {
                       </div>
                     )}
                   </div>
-                  <span className="text-xs text-body text-center leading-tight group-hover:text-heading transition-colors line-clamp-2">
+                  <span className="text-sm md:text-base text-body text-center leading-tight group-hover:text-heading transition-colors line-clamp-2">
                     {product.name}
                   </span>
                 </Link>
