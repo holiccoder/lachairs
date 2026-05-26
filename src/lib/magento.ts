@@ -231,16 +231,21 @@ export async function getProducts(
   page = 1,
   pageSize = 12
 ): Promise<ProductsResult> {
-  const data = await magentoFetch<MagentoProductsResponse>(
-    `products?searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
-  );
+  try {
+    const data = await magentoFetch<MagentoProductsResponse>(
+      `products?searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
+    );
 
-  return {
-    items: data.items.map(transformProduct),
-    total: data.total_count,
-    page,
-    pageSize,
-  };
+    return {
+      items: data.items.map(transformProduct),
+      total: data.total_count,
+      page,
+      pageSize,
+    };
+  } catch (err) {
+    console.error("[magento] getProducts failed:", err);
+    return { items: [], total: 0, page, pageSize };
+  }
 }
 
 export async function getProductBySku(sku: string): Promise<Product | null> {
@@ -269,24 +274,34 @@ export async function getAllProducts(): Promise<Product[]> {
 }
 
 export async function searchProducts(query: string, page = 1, pageSize = 24): Promise<ProductsResult> {
-  const filter = `searchCriteria[filter_groups][0][filters][0][field]=name&searchCriteria[filter_groups][0][filters][0][value]=%25${encodeURIComponent(query)}%25&searchCriteria[filter_groups][0][filters][0][condition_type]=like`;
-  const data = await magentoFetch<MagentoProductsResponse>(
-    `products?${filter}&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
-  );
-  return {
-    items: data.items.map(transformProduct),
-    total: data.total_count,
-    page,
-    pageSize,
-  };
+  try {
+    const filter = `searchCriteria[filter_groups][0][filters][0][field]=name&searchCriteria[filter_groups][0][filters][0][value]=%25${encodeURIComponent(query)}%25&searchCriteria[filter_groups][0][filters][0][condition_type]=like`;
+    const data = await magentoFetch<MagentoProductsResponse>(
+      `products?${filter}&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
+    );
+    return {
+      items: data.items.map(transformProduct),
+      total: data.total_count,
+      page,
+      pageSize,
+    };
+  } catch (err) {
+    console.error("[magento] searchProducts failed:", err);
+    return { items: [], total: 0, page, pageSize };
+  }
 }
 
 export async function getCategories(): Promise<Category[]> {
-  const data = await magentoFetch<{
-    children_data: MagentoCategory[];
-  }>("categories");
+  try {
+    const data = await magentoFetch<{
+      children_data: MagentoCategory[];
+    }>("categories");
 
-  return data.children_data.map((cat) => transformCategory(cat, ""));
+    return data.children_data.map((cat) => transformCategory(cat, ""));
+  } catch (err) {
+    console.error("[magento] getCategories failed:", err);
+    return [];
+  }
 }
 
 function transformCategory(cat: MagentoCategory, parentPath = ""): Category {
@@ -335,17 +350,22 @@ export async function getProductsByCategory(
   page = 1,
   pageSize = 24
 ): Promise<ProductsResult> {
-  const filter = `searchCriteria[filter_groups][0][filters][0][field]=category_id&searchCriteria[filter_groups][0][filters][0][value]=${categoryId}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq`;
-  const data = await magentoFetch<MagentoProductsResponse>(
-    `products?${filter}&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
-  );
+  try {
+    const filter = `searchCriteria[filter_groups][0][filters][0][field]=category_id&searchCriteria[filter_groups][0][filters][0][value]=${categoryId}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq`;
+    const data = await magentoFetch<MagentoProductsResponse>(
+      `products?${filter}&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
+    );
 
-  return {
-    items: data.items.map(transformProduct),
-    total: data.total_count,
-    page,
-    pageSize,
-  };
+    return {
+      items: data.items.map(transformProduct),
+      total: data.total_count,
+      page,
+      pageSize,
+    };
+  } catch (err) {
+    console.error("[magento] getProductsByCategory failed:", err);
+    return { items: [], total: 0, page, pageSize };
+  }
 }
 
 export interface CategoryInfo {
