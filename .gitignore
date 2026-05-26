@@ -42,3 +42,6 @@ next-env.d.ts
 
 # ide
 .idea/
+
+# data cache (stale-while-revalidate fallback)
+.data-cache/

@@ -2,6 +2,8 @@
 /*  Magento 2 REST API Client                                                  */
 /* -------------------------------------------------------------------------- */
 
+import { staleWhileRevalidate } from "./cache";
+
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
 const ACCESS_TOKEN = process.env.API_ACCESS_TOKEN;
 const MEDIA_BASE = "https://lachairs.com/media/catalog/product";
@@ -205,19 +207,24 @@ function transformProduct(p: MagentoProduct): Product {
 
 async function magentoFetch<T>(path: string): Promise<T> {
   const url = `${API_BASE}${path}`;
-  const res = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${ACCESS_TOKEN}`,
-      "Content-Type": "application/json",
-    },
-    cache: "no-store",
+
+  const result = await staleWhileRevalidate<T>(path, async () => {
+    const res = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${ACCESS_TOKEN}`,
+        "Content-Type": "application/json",
+      },
+      cache: "no-store",
+    });
+
+    if (!res.ok) {
+      throw new Error(`Magento API error ${res.status}: ${res.statusText}`);
+    }
+
+    return res.json();
   });
 
-  if (!res.ok) {
-    throw new Error(`Magento API error ${res.status}: ${res.statusText}`);
-  }
-
-  return res.json();
+  return result.data;
 }
 
 export async function getProducts(
