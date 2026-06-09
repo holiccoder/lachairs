@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { registerCompany, loginCustomer } from "@/lib/magento";
+import { registerCompany, loginCustomer } from "@/lib/magento-client";
 import { useAuth, setAuthData } from "@/hooks/useAuth";
 import { useRouter } from "next/navigation";
 

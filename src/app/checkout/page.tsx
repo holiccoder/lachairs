@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useCart } from "@/context/CartContext";
 import { useAuth } from "@/hooks/useAuth";
-import { placeOrder, getCustomerProfile } from "@/lib/magento";
+import { placeOrder, getCustomerProfile } from "@/lib/magento-client";
 
 const usStates = [
   "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",

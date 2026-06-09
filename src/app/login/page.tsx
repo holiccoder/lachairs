@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { loginCustomer, getCustomerProfile } from "@/lib/magento";
+import { loginCustomer, getCustomerProfile } from "@/lib/magento-client";
 import { setAuthData } from "@/hooks/useAuth";
 
 export default function LoginPage() {

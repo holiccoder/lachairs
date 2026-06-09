@@ -11,7 +11,7 @@ import {
   getCustomerOrders,
   type CustomerProfile,
   type CustomerOrder,
-} from "@/lib/magento";
+} from "@/lib/magento-client";
 
 type Tab = "profile" | "orders";
 
