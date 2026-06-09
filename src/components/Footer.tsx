@@ -82,18 +82,27 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 pt-16 pb-8 px-6 lg:px-12">
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">
           {/* Column 1 — Brand */}
           <div>
             <div className="mb-4">
               <img src="/logo.jpg" alt="Lachairs" className="h-16 w-auto object-contain" />
             </div>
-            <p className="text-base text-body leading-relaxed">
-              628 Shoppers Ln<br />
-              Covina, CA 91723<br />
-              info@lachairs.com<br />
-              800-531-9968
-            </p>
+            <div className="text-sm text-body leading-relaxed space-y-2">
+              <p>
+                <span className="font-semibold text-heading">Warehouse:</span><br />
+                960 W Brooks St, Ontario, CA 91762
+              </p>
+              <p>
+                <span className="font-semibold text-heading">Open:</span> 7 days, 9AM - 5PM
+              </p>
+              <p>
+                <span className="font-semibold text-heading">Office:</span> 628 Shoppers Ln, Covina, CA 91732
+              </p>
+              <p>
+                <span className="font-semibold text-heading">Phone:</span> 972-835-1856
+              </p>
+            </div>
           </div>
 
           {/* Column 2 — Product Information */}

@@ -22,7 +22,7 @@ const inquiryTypes = [
 const contactCards = [
   {
     title: "Sales & Inquiries",
-    lines: ["info@lachairs.com", "800-531-9968"],
+    lines: ["info@lachairs.com"],
     icon: (
       <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="8" y="10" width="32" height="28" rx="4" />
@@ -34,7 +34,7 @@ const contactCards = [
   },
   {
     title: "Account Support",
-    lines: ["accounts@lachairs.com", "800-531-9968"],
+    lines: ["accounts@lachairs.com"],
     icon: (
       <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="24" cy="16" r="8" />
@@ -45,7 +45,7 @@ const contactCards = [
   },
   {
     title: "Headquarters",
-    lines: ["628 Shoppers Ln", "Covina, CA 91723"],
+    lines: ["Covina, CA 91723", "628 Shoppers Ln,"],
     icon: (
       <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M24 4 C16 12 8 18 8 28 C8 36 16 42 24 42 C32 42 40 36 40 28 C40 18 32 12 24 4Z" />
@@ -98,8 +98,8 @@ export default function ContactPage() {
               <div key={card.title} className="border border-gray-200 rounded-lg p-6 flex flex-col items-center text-center">
                 <div className="text-brand mb-4">{card.icon}</div>
                 <h3 className="text-sm font-bold text-heading mb-2">{card.title}</h3>
-                {card.lines.map((line) => (
-                  <p key={line} className="text-sm text-body leading-relaxed">{line}</p>
+                {card.lines.map((line, i) => (
+                  <p key={line} className={`text-sm text-body leading-relaxed ${i === 0 && card.title === "Headquarters" ? "font-bold" : ""}`}>{line}</p>
                 ))}
               </div>
             ))}
@@ -225,9 +225,8 @@ export default function ContactPage() {
                 <div className="bg-[#F5F5F5] rounded-lg p-6">
                   <h3 className="font-bold text-heading mb-2">Covina, CA</h3>
                   <p className="text-sm text-body leading-relaxed">
-                    628 Shoppers Ln<br />
-                    Covina, CA 91723<br />
-                    800-531-9968
+                    <span className="font-bold">Covina, CA 91723</span><br />
+                    628 Shoppers Ln
                   </p>
                 </div>
               </div>
