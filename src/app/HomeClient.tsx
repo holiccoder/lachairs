@@ -13,21 +13,21 @@ import Footer from "@/components/Footer";
 
 const heroSlides = [
   {
-    src: "/banner1.webp",
+    src: "/home-banners/01.jpg",
     heading: "The Easiest Way to Source Commercial Furniture",
     text: "Reliable inventory, contract-grade durability, and dedicated support for business buyers. Get started by creating your account.",
     button: "UNLOCK BUSINESS PRICING",
     subtext: "Account Approval Typically Within 1 Business Day",
   },
   {
-    src: "https://picsum.photos/seed/conference/1600/800",
+    src: "/home-banners/02.jpg",
     heading: "Custom Furniture Designed for Your Vision",
     text: "From concept to completion, we work with designers and venues to craft pieces that match your exact specifications.",
     button: "EXPLORE CUSTOMIZATION",
     subtext: "Free Design Consultation Available",
   },
   {
-    src: "/party.jpg",
+    src: "/home-banners/03.jpg",
     heading: "Trusted by Hospitality Leaders Nationwide",
     text: "Join hundreds of hotels, venues, and event planners who rely on Lachairs for quality, consistency, and on-time delivery.",
     button: "CREATE WHOLESALE ACCOUNT",
