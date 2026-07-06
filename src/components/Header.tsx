@@ -237,7 +237,7 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          className="lg:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4"
+          className="lg:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4 max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain"
         >
           <div>
             <button
