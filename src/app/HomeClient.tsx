@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 import Link from "next/link";
 import type { Product } from "@/lib/magento";
 import Header from "@/components/Header";
@@ -38,19 +38,19 @@ const heroSlides = [
 const industryCategories = [
   {
     title: "PARTY RENTAL",
-    image: "https://picsum.photos/seed/party-rental/800/600",
+    image: "/backgrounds/01.jpg",
   },
   {
     title: "HOSPITALITY",
-    image: "https://picsum.photos/seed/hospitality/800/600",
+    image: "/backgrounds/02.jpg",
   },
   {
     title: "RESALE PARTNERS",
-    image: "https://picsum.photos/seed/resale/800/600",
+    image: "/backgrounds/03.jpg",
   },
   {
     title: "VENUE",
-    image: "/chairs.png",
+    image: "/backgrounds/04.jpg",
   },
 ];
 
@@ -161,48 +161,39 @@ export default function HomeClient({ products }: { products: Product[] }) {
       {/*  2. Hero Carousel                                                   */}
       {/* ================================================================== */}
       <section className="relative min-h-[600px] md:min-h-[750px] overflow-hidden">
-        <AnimatePresence mode="wait">
-          {heroSlides.map(
-            (slide, i) =>
-              i === heroIndex && (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="absolute inset-0"
-                >
-                  <img
-                    src={slide.src}
-                    alt=""
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/50" />
-                  <div className="absolute inset-0 flex items-center">
-                    <div className="max-w-[1440px] mx-auto px-6 lg:px-12 w-full">
-                      <div className="max-w-xl">
-                        <FadeIn>
-                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-                            {slide.heading}
-                          </h1>
-                          <p className="text-base lg:text-lg text-white/80 leading-relaxed mb-8">
-                            {slide.text}
-                          </p>
-                          <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide">
-                            {slide.button}
-                          </button>
-                          <p className="mt-4 text-xs text-white/60">
-                            {slide.subtext}
-                          </p>
-                        </FadeIn>
-                      </div>
+        {heroSlides.map(
+          (slide, i) =>
+            i === heroIndex && (
+              <div key={i} className="absolute inset-0">
+                <img
+                  src={slide.src}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 flex items-center">
+                  <div className="max-w-[1440px] mx-auto px-6 lg:px-12 w-full">
+                    <div className="max-w-xl">
+                      <FadeIn>
+                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+                          {slide.heading}
+                        </h1>
+                        <p className="text-base lg:text-lg text-white/80 leading-relaxed mb-8">
+                          {slide.text}
+                        </p>
+                        <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide">
+                          {slide.button}
+                        </button>
+                        <p className="mt-4 text-xs text-white/60">
+                          {slide.subtext}
+                        </p>
+                      </FadeIn>
                     </div>
                   </div>
-                </motion.div>
-              ),
-          )}
-        </AnimatePresence>
+                </div>
+              </div>
+            ),
+        )}
 
         {/* Arrows */}
         <button
@@ -311,7 +302,7 @@ export default function HomeClient({ products }: { products: Product[] }) {
             <FadeIn className="flex-1">
               <div className="rounded-lg h-72 overflow-hidden">
                 <img
-                  src="https://picsum.photos/seed/conference/800/600"
+                  src="/left.jpg"
                   alt="Conference room setup"
                   className="w-full h-full object-cover"
                 />
