@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import Link from "next/link";
 import type { Product } from "@/lib/magento";
 import Header from "@/components/Header";
@@ -124,6 +124,12 @@ const whyChooseBlocks = [
 /*  Sub-components                                                            */
 /* -------------------------------------------------------------------------- */
 
+const slideVariants = {
+  enter: (direction: number) => ({ x: direction > 0 ? "100%" : "-100%" }),
+  center: { x: 0 },
+  exit: (direction: number) => ({ x: direction < 0 ? "100%" : "-100%" }),
+};
+
 function FadeIn({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <motion.div
@@ -144,9 +150,24 @@ function FadeIn({ children, className = "" }: { children: React.ReactNode; class
 
 export default function HomeClient({ products }: { products: Product[] }) {
   const [heroIndex, setHeroIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
-  const nextHero = useCallback(() => setHeroIndex((i) => (i + 1) % heroSlides.length), []);
-  const prevHero = useCallback(() => setHeroIndex((i) => (i - 1 + heroSlides.length) % heroSlides.length), []);
+  const nextHero = useCallback(() => {
+    setDirection(1);
+    setHeroIndex((i) => (i + 1) % heroSlides.length);
+  }, []);
+  const prevHero = useCallback(() => {
+    setDirection(-1);
+    setHeroIndex((i) => (i - 1 + heroSlides.length) % heroSlides.length);
+  }, []);
+  const goToHero = useCallback(
+    (target: number) => {
+      const diff = (target - heroIndex + heroSlides.length) % heroSlides.length;
+      setDirection(diff <= heroSlides.length / 2 ? 1 : -1);
+      setHeroIndex(target);
+    },
+    [heroIndex],
+  );
 
   useEffect(() => {
     const timer = setInterval(nextHero, 5000);
@@ -161,39 +182,50 @@ export default function HomeClient({ products }: { products: Product[] }) {
       {/*  2. Hero Carousel                                                   */}
       {/* ================================================================== */}
       <section className="relative min-h-[600px] md:min-h-[750px] overflow-hidden">
-        {heroSlides.map(
-          (slide, i) =>
-            i === heroIndex && (
-              <div key={i} className="absolute inset-0">
-                <img
-                  src={slide.src}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/50" />
-                <div className="absolute inset-0 flex items-center">
-                  <div className="max-w-[1440px] mx-auto px-6 lg:px-12 w-full">
-                    <div className="max-w-xl">
-                      <FadeIn>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-                          {slide.heading}
-                        </h1>
-                        <p className="text-base lg:text-lg text-white/80 leading-relaxed mb-8">
-                          {slide.text}
-                        </p>
-                        <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide">
-                          {slide.button}
-                        </button>
-                        <p className="mt-4 text-xs text-white/60">
-                          {slide.subtext}
-                        </p>
-                      </FadeIn>
+        <AnimatePresence initial={false} custom={direction}>
+          {heroSlides.map(
+            (slide, i) =>
+              i === heroIndex && (
+                <motion.div
+                  key={i}
+                  custom={direction}
+                  variants={slideVariants}
+                  initial="enter"
+                  animate="center"
+                  exit="exit"
+                  transition={{ x: { type: "tween", duration: 0.5, ease: "easeInOut" } }}
+                  className="absolute inset-0"
+                >
+                  <img
+                    src={slide.src}
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50" />
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="max-w-[1440px] mx-auto px-6 lg:px-12 w-full">
+                      <div className="max-w-xl">
+                        <FadeIn>
+                          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+                            {slide.heading}
+                          </h1>
+                          <p className="text-base lg:text-lg text-white/80 leading-relaxed mb-8">
+                            {slide.text}
+                          </p>
+                          <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide">
+                            {slide.button}
+                          </button>
+                          <p className="mt-4 text-xs text-white/60">
+                            {slide.subtext}
+                          </p>
+                        </FadeIn>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            ),
-        )}
+                </motion.div>
+              ),
+          )}
+        </AnimatePresence>
 
         {/* Arrows */}
         <button
@@ -220,7 +252,7 @@ export default function HomeClient({ products }: { products: Product[] }) {
           {heroSlides.map((_, i) => (
             <button
               key={i}
-              onClick={() => setHeroIndex(i)}
+              onClick={() => goToHero(i)}
               className={`w-2.5 h-2.5 rounded-full transition-all ${
                 i === heroIndex ? "bg-white w-6" : "bg-white/50 hover:bg-white/70"
               }`}
