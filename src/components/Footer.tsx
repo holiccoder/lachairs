@@ -146,19 +146,19 @@ export default function Footer() {
               Sign up for our newsletter to get updates on new arrivals, special offers and our
               latest news.
             </p>
-            <form onSubmit={handleSubscribe} className="flex">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 sm:gap-0 max-w-xs sm:max-w-none mx-auto sm:mx-0">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email..."
                 required
-                className="flex-1 border border-gray-300 rounded-l px-3 py-2.5 text-sm text-body placeholder-gray-400 outline-none focus:border-brand transition-colors"
+                className="w-full sm:flex-1 border border-gray-300 rounded px-3 py-2.5 text-sm text-body placeholder-gray-400 outline-none focus:border-brand transition-colors sm:rounded-l sm:rounded-r-none"
               />
-              <button 
+              <button
                 type="submit"
                 disabled={isLoading}
-                className="bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded-r transition-colors tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full sm:w-auto bg-brand hover:bg-brand-dark text-white text-xs font-semibold px-4 py-2.5 rounded transition-colors tracking-wide disabled:opacity-50 disabled:cursor-not-allowed sm:rounded-r sm:rounded-l-none"
               >
                 {isLoading ? "SUBSCRIBING..." : "SUBSCRIBE"}
               </button>
