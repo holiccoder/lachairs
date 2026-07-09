@@ -6,7 +6,7 @@ import { staleWhileRevalidate } from "./cache";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
 const ACCESS_TOKEN = process.env.API_ACCESS_TOKEN;
-const MEDIA_BASE = "https://lachairs.com/media/catalog/product";
+const MEDIA_BASE = "https://admin.lachairs.com/media/catalog/product";
 
 /* -------------------------------------------------------------------------- */
 /*  Raw Magento API Types                                                      */
