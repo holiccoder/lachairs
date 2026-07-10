@@ -132,7 +132,7 @@ export default function Header() {
 
         {/* Search */}
         <form onSubmit={handleSearch} className="hidden lg:flex items-center border border-gray-200 rounded px-3 py-2 gap-2 flex-1 max-w-[260px]">
-          <button type="submit" className="shrink-0" aria-label="Search">
+          <button type="submit" className="shrink-0 cursor-pointer" aria-label="Search">
             <svg className="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="10" cy="10" r="7" />
               <line x1="15" y1="15" x2="21" y2="21" strokeLinecap="round" />
@@ -297,7 +297,7 @@ export default function Header() {
             </Link>
           )}
           <form onSubmit={handleSearch} className="flex items-center border border-gray-200 rounded px-3 py-2 gap-2">
-            <button type="submit" aria-label="Search">
+            <button type="submit" className="cursor-pointer" aria-label="Search">
               <svg className="w-4 h-4 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <circle cx="10" cy="10" r="7" />
                 <line x1="15" y1="15" x2="21" y2="21" strokeLinecap="round" />

@@ -70,9 +70,35 @@ export default function ContactPage() {
     inquiryType: "",
     message: "",
   });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (submitting) return;
+    setSubmitting(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) {
+        throw new Error(data.message || "Failed to send message.");
+      }
+      setSubmitted(true);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to send message.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -114,7 +140,20 @@ export default function ContactPage() {
             {/* Form */}
             <div className="flex-1">
               <h2 className="text-xl font-bold text-heading mb-6">Send Us a Message</h2>
-              <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+              {submitted ? (
+                <div className="border border-brand/30 bg-brand/5 rounded-lg p-8 text-center">
+                  <div className="text-brand mx-auto mb-4 flex items-center justify-center w-14 h-14 rounded-full bg-brand/10">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M5 12 L10 17 L20 7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <h3 className="text-lg font-bold text-heading mb-2">Thank you!</h3>
+                  <p className="text-sm text-body leading-relaxed">
+                    We&apos;ve received your message and will get back to you within one business day.
+                  </p>
+                </div>
+              ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-semibold text-heading mb-1.5">
@@ -211,11 +250,16 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-10 py-3 rounded transition-colors tracking-wide"
+                  disabled={submitting}
+                  className="bg-brand hover:bg-brand-dark disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer text-white font-semibold text-sm px-10 py-3 rounded transition-colors tracking-wide"
                 >
-                  SEND MESSAGE
+                  {submitting ? "SENDING..." : "SEND MESSAGE"}
                 </button>
+                {error ? (
+                  <p className="text-sm text-red-600 mt-2">{error}</p>
+                ) : null}
               </form>
+              )}
             </div>
 
             {/* Sidebar */}

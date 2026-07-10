@@ -45,3 +45,6 @@ next-env.d.ts
 
 # data cache (stale-while-revalidate fallback)
 .data-cache/
+
+# contact form submissions
+/data/contact-messages/
