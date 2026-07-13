@@ -1,0 +1,47 @@
+[
+  {
+    "categoryFolder": "monarch-throne-chair",
+    "sourceListingUrl": "https://www.atlaschairs.com/monarch-throne-chair.html#92=99",
+    "productUrl": "https://www.atlaschairs.com/monarch-throne-chair.html#92=99",
+    "listingName": "",
+    "title": "Monarch Throne Chair",
+    "sku": "MTHRONE58",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">71.65&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">32.6&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">28.3&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">444 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/m/t/mthrone58slvwh_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/monarch-throne-chair/images/MTHRONE58/00.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "No",
+      "Country of Manufacture": "China",
+      "Brand": "Lachairs",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "71.65''",
+      "Overall Width": "32.6''",
+      "Overall Length / Depth": "28.3''",
+      "Ships Assembled?": "Yes",
+      "Has Arms": "Yes",
+      "Weight Capacity": "444 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "MTHRONE58",
+      "name": "Monarch Throne Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">71.65&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">32.6&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">28.3&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">444 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "monarch-throne-chair",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 0,
+    "variantUrls": []
+  }
+]

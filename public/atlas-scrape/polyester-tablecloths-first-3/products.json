@@ -1,0 +1,160 @@
+[
+  {
+    "categoryFolder": "polyester-tablecloths-first-3",
+    "sourceListingUrl": "https://www.atlaschairs.com/polyester-tablecloths",
+    "productUrl": "https://www.atlaschairs.com/polyester-tablecloths/90-inch-round-polyester-tablecloth.html",
+    "listingName": "90'' Round Polyester Tablecloth",
+    "title": "90'' Round Polyester Tablecloth",
+    "sku": "PY-90R",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">100% Polyester</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Fits Table Size</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our  size guide</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Seams?</th><td style=\"padding:8px;border:1px solid #ddd;\">Seamless</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Hem</th><td style=\"padding:8px;border:1px solid #ddd;\">Narrow Rolled Serge</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Shape</th><td style=\"padding:8px;border:1px solid #ddd;\">Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Size</th><td style=\"padding:8px;border:1px solid #ddd;\">90&#039;&#039; Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/3/0/3090r_2743.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/w/h/white-polyester.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/9/0/90-round-drops.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-90R/00.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-90R/01.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-90R/02.jpg"
+    ],
+    "specifications": {
+      "Special Order Item": "No",
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Brand": "Lachairs",
+      "Material": "100% Polyester",
+      "Commercial-Grade?": "Yes",
+      "Fits Table Size": "Please see our  size guide",
+      "Has Seams?": "Seamless",
+      "Hem": "Narrow Rolled Serge",
+      "Shape": "Round",
+      "Size": "90'' Round",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "PY-90R",
+      "name": "90'' Round Polyester Tablecloth",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">100% Polyester</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Fits Table Size</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our  size guide</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Seams?</th><td style=\"padding:8px;border:1px solid #ddd;\">Seamless</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Hem</th><td style=\"padding:8px;border:1px solid #ddd;\">Narrow Rolled Serge</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Shape</th><td style=\"padding:8px;border:1px solid #ddd;\">Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Size</th><td style=\"padding:8px;border:1px solid #ddd;\">90&#039;&#039; Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "90-inch-round-polyester-tablecloth",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 0,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "polyester-tablecloths-first-3",
+    "sourceListingUrl": "https://www.atlaschairs.com/polyester-tablecloths",
+    "productUrl": "https://www.atlaschairs.com/polyester-tablecloths/120-round-polyester-tablecloth.html",
+    "listingName": "120'' Round Polyester Tablecloth",
+    "title": "120'' Round Polyester Tablecloth",
+    "sku": "PY-120R",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">100% Polyester</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Fits Table Size</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our  size guide</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Seams?</th><td style=\"padding:8px;border:1px solid #ddd;\">Seamless</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Hem</th><td style=\"padding:8px;border:1px solid #ddd;\">Narrow Rolled Serge</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Laundering</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our laundering recommendations</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Shape</th><td style=\"padding:8px;border:1px solid #ddd;\">Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Size</th><td style=\"padding:8px;border:1px solid #ddd;\">120&#039;&#039; Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/1/2/120-round-white-tablecloth-1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/b/l/black-polyester_2_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/1/2/120-round-drops.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/w/h/white-polyester-tablecloths-01_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/w/h/white-polyester_2_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/i/v/ivory-polyester_2_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-120R/00.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-120R/01.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-120R/02.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-120R/03.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-120R/04.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-120R/05.jpg"
+    ],
+    "specifications": {
+      "Special Order Item": "No",
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Brand": "Lachairs",
+      "Material": "100% Polyester",
+      "Commercial-Grade?": "Yes",
+      "Fits Table Size": "Please see our  size guide",
+      "Has Seams?": "Seamless",
+      "Hem": "Narrow Rolled Serge",
+      "Laundering": "Please see our laundering recommendations",
+      "Shape": "Round",
+      "Size": "120'' Round",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "PY-120R",
+      "name": "120'' Round Polyester Tablecloth",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">100% Polyester</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Fits Table Size</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our  size guide</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Seams?</th><td style=\"padding:8px;border:1px solid #ddd;\">Seamless</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Hem</th><td style=\"padding:8px;border:1px solid #ddd;\">Narrow Rolled Serge</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Laundering</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our laundering recommendations</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Shape</th><td style=\"padding:8px;border:1px solid #ddd;\">Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Size</th><td style=\"padding:8px;border:1px solid #ddd;\">120&#039;&#039; Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "120-round-polyester-tablecloth",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 1,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "polyester-tablecloths-first-3",
+    "sourceListingUrl": "https://www.atlaschairs.com/polyester-tablecloths",
+    "productUrl": "https://www.atlaschairs.com/polyester-tablecloths/108-round-polyester-tablecloth.html",
+    "listingName": "108'' Round Polyester Tablecloth",
+    "title": "108'' Round Polyester Tablecloth",
+    "sku": "PY-108R",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">100% Polyester</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Fits Table Size</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our  size guide</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Seams?</th><td style=\"padding:8px;border:1px solid #ddd;\">Seamless</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Hem</th><td style=\"padding:8px;border:1px solid #ddd;\">Narrow Rolled Serge</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Laundering</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our laundering recommendations</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Shape</th><td style=\"padding:8px;border:1px solid #ddd;\">Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Size</th><td style=\"padding:8px;border:1px solid #ddd;\">108&#039;&#039; Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/i/m/img_1376-22000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/w/h/white-polyester-tablecloths-01.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/1/0/108-round-drops.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-108R/00.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-108R/01.jpg",
+      "/public/atlas-scrape/polyester-tablecloths-first-3/images/PY-108R/02.jpg"
+    ],
+    "specifications": {
+      "Special Order Item": "No",
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Brand": "Lachairs",
+      "Material": "100% Polyester",
+      "Commercial-Grade?": "Yes",
+      "Fits Table Size": "Please see our  size guide",
+      "Has Seams?": "Seamless",
+      "Hem": "Narrow Rolled Serge",
+      "Laundering": "Please see our laundering recommendations",
+      "Shape": "Round",
+      "Size": "108'' Round",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "PY-108R",
+      "name": "108'' Round Polyester Tablecloth",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">100% Polyester</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Fits Table Size</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our  size guide</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Seams?</th><td style=\"padding:8px;border:1px solid #ddd;\">Seamless</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Hem</th><td style=\"padding:8px;border:1px solid #ddd;\">Narrow Rolled Serge</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Laundering</th><td style=\"padding:8px;border:1px solid #ddd;\">Please see our laundering recommendations</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Shape</th><td style=\"padding:8px;border:1px solid #ddd;\">Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Size</th><td style=\"padding:8px;border:1px solid #ddd;\">108&#039;&#039; Round</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "108-round-polyester-tablecloth",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 2,
+    "variantUrls": []
+  }
+]

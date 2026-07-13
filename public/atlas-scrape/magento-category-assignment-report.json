@@ -1,0 +1,584 @@
+{
+  "time": "2026-07-06T01:01:09.235Z",
+  "total": 64,
+  "successful": 64,
+  "failed": 0,
+  "results": [
+    {
+      "sku": "RXBC4",
+      "folder": "cross-back-chairs-material-935",
+      "categoryIds": [
+        "212"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RXBC26-MNBKG",
+      "folder": "cross-back-chairs-material-935",
+      "categoryIds": [
+        "212"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "XBC6DB-TX",
+      "folder": "cross-back-chairs-material-935",
+      "categoryIds": [
+        "212"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RXBC3",
+      "folder": "cross-back-chairs-material-935",
+      "categoryIds": [
+        "212"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CBC9GFBPF",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "DBBC9EDWFABF",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CBC9BOFCWF-ARMS",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "ABC9",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CBC9X",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CBC9SLVF",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CBC9CVF",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CBC9BKFBKF",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RPLC4",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "158"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "BCD9BASIC",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "161"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "SP-BCC",
+      "folder": "banquet-chairs",
+      "categoryIds": [
+        "160"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "VWBC-C70",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CWMDC-C105",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "NMBC-C121-ANCH",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "ALEXA41",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "AVA41",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "AVA41PAD",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "160"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "MSC9",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "MBS9",
+      "folder": "metal-stacking-chairs",
+      "categoryIds": [
+        "215"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "WSCT436R-NAT",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "WSCT430R-NAT",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CT530R",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CT524R",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CT536R",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CT930R-BK",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "PFT2-BLK-32RBAR",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "PFT2-WHT-32RBAR",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RCT35-36R",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "MTT-C105-GM2424",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CT5RTOP24",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "CT5RTOP30",
+      "folder": "cocktail-tables-first-12",
+      "categoryIds": [
+        "199"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT26-BENCH-X",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT-C4-TNRW",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT26-BGFW60R-HLEGS",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT26-ANTB60R-HLEGS",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT26-RUST60R-HLEGS",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT26-BGNAT60R-HLEGS",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RFT35-4084FLD-XLEGS",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "KFT26-3072FLD",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT4-4096",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT4-4096-X",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "KFT26-RUST3072-H",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT4-60R-HLEGS",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FT4-BGM60R-ST",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RFT35-60R",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "RFT35-60R-TOP",
+      "folder": "farm-tables-first-page",
+      "categoryIds": [
+        "200"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "PY-90R",
+      "folder": "polyester-tablecloths-first-3",
+      "categoryIds": [
+        "201"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "PY-120R",
+      "folder": "polyester-tablecloths-first-3",
+      "categoryIds": [
+        "201"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "PY-108R",
+      "folder": "polyester-tablecloths-first-3",
+      "categoryIds": [
+        "201"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "LBC4CLR",
+      "folder": "clear-chiavari-chairs-search-first-3",
+      "categoryIds": [
+        "211"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "KRCC3CLR",
+      "folder": "clear-chiavari-chairs-search-first-3",
+      "categoryIds": [
+        "211"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "MRCC-C4-CLR-KD",
+      "folder": "clear-chiavari-chairs-search-first-3",
+      "categoryIds": [
+        "211"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FC75DOLLY",
+      "folder": "folding-chair-carts-dollies",
+      "categoryIds": [
+        "157"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "UFCD2",
+      "folder": "folding-chair-carts-dollies",
+      "categoryIds": [
+        "157"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "FCCART2",
+      "folder": "folding-chair-carts-dollies",
+      "categoryIds": [
+        "157"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "HCC2DTCART",
+      "folder": "folding-chair-carts-dollies",
+      "categoryIds": [
+        "157"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "BMFCC2",
+      "folder": "folding-chair-carts-dollies",
+      "categoryIds": [
+        "157"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "DOLLY-C105-FC",
+      "folder": "folding-chair-carts-dollies",
+      "categoryIds": [
+        "157"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "MTHRONE58",
+      "folder": "monarch-throne-chair",
+      "categoryIds": [
+        "159"
+      ],
+      "success": true,
+      "status": 200
+    },
+    {
+      "sku": "BFC33",
+      "folder": "bamboo-folding-chair-stick-back",
+      "categoryIds": [
+        "155"
+      ],
+      "success": true,
+      "status": 200
+    }
+  ]
+}

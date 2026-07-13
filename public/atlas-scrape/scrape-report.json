@@ -1,0 +1,63 @@
+{
+  "time": "2026-07-05T00:43:39.406Z",
+  "summary": [
+    {
+      "folder": "cross-back-chairs-material-935",
+      "count": 4,
+      "errors": 0
+    },
+    {
+      "folder": "banquet-chairs",
+      "count": 11,
+      "errors": 0
+    },
+    {
+      "folder": "metal-stacking-chairs",
+      "count": 8,
+      "errors": 0
+    },
+    {
+      "folder": "cocktail-tables-first-12",
+      "count": 12,
+      "errors": 0
+    },
+    {
+      "folder": "farm-tables-first-page",
+      "count": 16,
+      "errors": 0
+    },
+    {
+      "folder": "polyester-tablecloths-first-3",
+      "count": 3,
+      "errors": 0
+    },
+    {
+      "folder": "clear-chiavari-chairs-search-first-3",
+      "count": 3,
+      "errors": 0
+    },
+    {
+      "folder": "folding-chair-carts-dollies",
+      "count": 6,
+      "errors": 0
+    },
+    {
+      "folder": "monarch-throne-chair",
+      "count": 1,
+      "errors": 0
+    },
+    {
+      "folder": "bamboo-folding-chair-stick-back",
+      "count": 1,
+      "errors": 0
+    }
+  ],
+  "totalUniqueProducts": 64,
+  "globalDuplicates": [
+    {
+      "sku": "RCT35-36R",
+      "folder": "farm-tables-first-page",
+      "url": "https://www.atlaschairs.com/farm-tables/36-reclaimed-elm-wood-cocktail-table.html"
+    }
+  ]
+}

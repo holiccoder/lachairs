@@ -1,0 +1,331 @@
+{
+  "time": "2026-07-05T03:10:56.182Z",
+  "apiBase": "https://lachairs.com/rest/V1/",
+  "total": 64,
+  "successful": 64,
+  "failed": 0,
+  "duplicateSkus": 0,
+  "successfulSkus": [
+    {
+      "sku": "RXBC4",
+      "productId": 97,
+      "name": "Farmhouse Resin Cross Back Chair"
+    },
+    {
+      "sku": "RXBC26-MNBKG",
+      "productId": 98,
+      "name": "Farmhouse Resin Cross Back Chair  - Medium with Black Grain - Closeout"
+    },
+    {
+      "sku": "XBC6DB-TX",
+      "productId": 99,
+      "name": "TimberTouch™ Resin Cross Back Chair - Dark Brown with Texture - Closeout"
+    },
+    {
+      "sku": "RXBC3",
+      "productId": 100,
+      "name": "TitanPRO™ Resin Cross Back Chair"
+    },
+    {
+      "sku": "CBC9GFBPF",
+      "productId": 101,
+      "name": "Crown Back Banquet Chair - Gold Frame with Beige Patterned Vinyl"
+    },
+    {
+      "sku": "DBBC9EDWFABF",
+      "productId": 102,
+      "name": "Dome Back Banquet Chair - Ashwood Brown Frame with Elora Driftwood Vinyl"
+    },
+    {
+      "sku": "CBC9BOFCWF-ARMS",
+      "productId": 103,
+      "name": "Crown Back Banquet Chair with Arms - Carbon Weave Vinyl with Onyx Frame"
+    },
+    {
+      "sku": "ABC9",
+      "productId": 104,
+      "name": "TitanPRO™ A-Frame Banquet Chair"
+    },
+    {
+      "sku": "CBC9X",
+      "productId": 105,
+      "name": "TitanPRO™ Crown Back Banquet Chair with Gold Frame"
+    },
+    {
+      "sku": "CBC9SLVF",
+      "productId": 106,
+      "name": "TitanPRO™ Crown Back Banquet Chair with Silver Vein Frame"
+    },
+    {
+      "sku": "CBC9CVF",
+      "productId": 107,
+      "name": "TitanPRO™ Crown Back Banquet Chair with Copper Vein Frame"
+    },
+    {
+      "sku": "CBC9BKFBKF",
+      "productId": 108,
+      "name": "TitanPRO™ Crown Back Banquet Chair - Black Frame - Black Fabric"
+    },
+    {
+      "sku": "RPLC4",
+      "productId": 109,
+      "name": "Resin Pop Louis Banquet Chair"
+    },
+    {
+      "sku": "BCD9BASIC",
+      "productId": 110,
+      "name": "Steel Chair Dolly for Stacking Chairs and Church Chairs"
+    },
+    {
+      "sku": "SP-BCC",
+      "productId": 111,
+      "name": "Spandex Banquet Chair Cover"
+    },
+    {
+      "sku": "VWBC-C70",
+      "productId": 112,
+      "name": "Kalisi Velvet Side Chair"
+    },
+    {
+      "sku": "CWMDC-C105",
+      "productId": 113,
+      "name": "Metal Mid Century Cow Dining Chair"
+    },
+    {
+      "sku": "NMBC-C121-ANCH",
+      "productId": 114,
+      "name": "Natalie Metal Ballroom Chair - Antique Chocolate"
+    },
+    {
+      "sku": "ALEXA41",
+      "productId": 115,
+      "name": "Alexa Dining Chair"
+    },
+    {
+      "sku": "AVA41",
+      "productId": 116,
+      "name": "Stainless Steel Ava Dining Chair"
+    },
+    {
+      "sku": "AVA41PAD",
+      "productId": 117,
+      "name": "Replacement Pad for Ava Stainless Steel Dining Chair"
+    },
+    {
+      "sku": "MSC9",
+      "productId": 118,
+      "name": "Titan Series™ Industrial Metal Chair"
+    },
+    {
+      "sku": "MBS9",
+      "productId": 119,
+      "name": "Titan Series™ Metal Bar Stool"
+    },
+    {
+      "sku": "WSCT436R-NAT",
+      "productId": 120,
+      "name": "Windsor Slat Wood Cocktail Table - 36'' Round - Natural"
+    },
+    {
+      "sku": "WSCT430R-NAT",
+      "productId": 121,
+      "name": "Windsor Slat Wood Cocktail Table - 30'' Round - Natural"
+    },
+    {
+      "sku": "CT530R",
+      "productId": 122,
+      "name": "Cocktail table - 30'' round w/30'' and 42'' poles"
+    },
+    {
+      "sku": "CT524R",
+      "productId": 123,
+      "name": "Cocktail table - 24'' round w/30'' and 42'' poles"
+    },
+    {
+      "sku": "CT536R",
+      "productId": 124,
+      "name": "Cocktail table - 36'' round w/30'' and 42'' poles"
+    },
+    {
+      "sku": "CT930R-BK",
+      "productId": 125,
+      "name": "Wooden Black Cocktail Table - 30'' Round with 30'' & 42'' Poles"
+    },
+    {
+      "sku": "PFT2-BLK-32RBAR",
+      "productId": 126,
+      "name": "TitanPRO™ 32'' Blow Molded Plastic Folding Cocktail Table - Black"
+    },
+    {
+      "sku": "PFT2-WHT-32RBAR",
+      "productId": 127,
+      "name": "TitanPRO™ 32'' Blow Molded Plastic Folding Cocktail Table"
+    },
+    {
+      "sku": "RCT35-36R",
+      "productId": 128,
+      "name": "36'' Reclaimed Elm Wood Cocktail Table"
+    },
+    {
+      "sku": "MTT-C105-GM2424",
+      "productId": 129,
+      "name": "Industrial Metal Cocktail Table - Gun Metal"
+    },
+    {
+      "sku": "CT5RTOP24",
+      "productId": 130,
+      "name": "24'' Cocktail Table - Tabletop Only"
+    },
+    {
+      "sku": "CT5RTOP30",
+      "productId": 131,
+      "name": "30'' Cocktail Table - Tabletop Only"
+    },
+    {
+      "sku": "FT26-BENCH-X",
+      "productId": 132,
+      "name": "Sonoma Folding Farm Table Bench - 8' x 12''"
+    },
+    {
+      "sku": "FT-C4-TNRW",
+      "productId": 133,
+      "name": "Wood Farm Table - Tinted Raw"
+    },
+    {
+      "sku": "FT26-BGFW60R-HLEGS",
+      "productId": 134,
+      "name": "Farmhouse 60'' Round Farm Table - Black Grain on Fruitwood - H Legs"
+    },
+    {
+      "sku": "FT26-ANTB60R-HLEGS",
+      "productId": 135,
+      "name": "Farmhouse 60'' Round Folding Farm Table - Black Grain on Antique Black - H Legs"
+    },
+    {
+      "sku": "FT26-RUST60R-HLEGS",
+      "productId": 136,
+      "name": "Farmhouse 60'' Round Farm Table - Rustic - H Legs"
+    },
+    {
+      "sku": "FT26-BGNAT60R-HLEGS",
+      "productId": 137,
+      "name": "Farmhouse 60'' Round Farm Table - Black Grain on Natural - H Legs"
+    },
+    {
+      "sku": "RFT35-4084FLD-XLEGS",
+      "productId": 138,
+      "name": "40'' x 84'' Reclaimed Elm Folding Farm Table - X-Legs"
+    },
+    {
+      "sku": "KFT26-3072FLD",
+      "productId": 139,
+      "name": "6' x 30'' Solid Pine Folding Kids Farm Table"
+    },
+    {
+      "sku": "FT4-4096",
+      "productId": 140,
+      "name": "Farmhouse Folding Farm Table With Leg Option - 8' x 40''"
+    },
+    {
+      "sku": "FT4-4096-X",
+      "productId": 141,
+      "name": "Farmhouse Folding Farm Table With Leg Option - 8' x 40''"
+    },
+    {
+      "sku": "KFT26-RUST3072-H",
+      "productId": 142,
+      "name": "Kid's Folding Farm Table - 30'' x 72'' - Rustic - H-Legs"
+    },
+    {
+      "sku": "FT4-60R-HLEGS",
+      "productId": 143,
+      "name": "Farmhouse 60'' Round Folding Farm Table with H Legs"
+    },
+    {
+      "sku": "FT4-BGM60R-ST",
+      "productId": 144,
+      "name": "60'' Round Farm Table - Black Grain on Medium - Straight Legs - Closeout"
+    },
+    {
+      "sku": "RFT35-60R",
+      "productId": 145,
+      "name": "60'' Round Reclaimed Elm Farm Table with X-Base"
+    },
+    {
+      "sku": "RFT35-60R-TOP",
+      "productId": 146,
+      "name": "60'' Round Reclaimed Elm Farm Table Top"
+    },
+    {
+      "sku": "PY-90R",
+      "productId": 147,
+      "name": "90'' Round Polyester Tablecloth"
+    },
+    {
+      "sku": "PY-120R",
+      "productId": 148,
+      "name": "120'' Round Polyester Tablecloth"
+    },
+    {
+      "sku": "PY-108R",
+      "productId": 149,
+      "name": "108'' Round Polyester Tablecloth"
+    },
+    {
+      "sku": "LBC4CLR",
+      "productId": 150,
+      "name": "Clear Lattice Back Resin Stacking Chair"
+    },
+    {
+      "sku": "KRCC3CLR",
+      "productId": 151,
+      "name": "Kid's Chiavari Chair - Clear"
+    },
+    {
+      "sku": "MRCC-C4-CLR-KD",
+      "productId": 152,
+      "name": "Mirage Clear Polycarbonate Chiavari Chair"
+    },
+    {
+      "sku": "FC75DOLLY",
+      "productId": 153,
+      "name": "Folding Chair Dolly"
+    },
+    {
+      "sku": "UFCD2",
+      "productId": 154,
+      "name": "Universal Folding Chair Dolly"
+    },
+    {
+      "sku": "FCCART2",
+      "productId": 155,
+      "name": "Plastic Folding Chair Cart"
+    },
+    {
+      "sku": "HCC2DTCART",
+      "productId": 156,
+      "name": "Hanging Chair Cart - Double Tier"
+    },
+    {
+      "sku": "BMFCC2",
+      "productId": 157,
+      "name": "Blow-Molded Chair Cart"
+    },
+    {
+      "sku": "DOLLY-C105-FC",
+      "productId": 158,
+      "name": "All Purpose Chair Dolly"
+    },
+    {
+      "sku": "MTHRONE58",
+      "productId": 96,
+      "name": "Monarch Throne Chair"
+    },
+    {
+      "sku": "BFC33",
+      "productId": 159,
+      "name": "Bamboo Folding Chair - Stick Back"
+    }
+  ],
+  "failedDetails": []
+}

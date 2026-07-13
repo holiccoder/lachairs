@@ -1,0 +1,455 @@
+[
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/kalisi-royal-blue-chair.html",
+    "listingName": "Velour Side Chair - Blue",
+    "title": "Kalisi Velvet Side Chair",
+    "sku": "VWBC-C70",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Velour, Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">32&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">19.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">90 Day Limited Manufacturer Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Static Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">300 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/6/_/6_3_1.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/VWBC-C70/00.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Brand": "Lachairs",
+      "Material": "Velour, Metal",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "32''",
+      "Overall Width": "18.5''",
+      "Seat Height": "19.5''",
+      "Ships Assembled?": "No",
+      "Has Arms": "No",
+      "Product Warranty": "90 Day Limited Manufacturer Warranty",
+      "Item Weight": "11 lbs",
+      "Static Weight Capacity": "300 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "VWBC-C70",
+      "name": "Kalisi Velvet Side Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Velour, Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">32&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">19.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">90 Day Limited Manufacturer Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Static Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">300 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "kalisi-royal-blue-chair",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 0,
+    "variantUrls": [
+      "https://www.atlaschairs.com/metal-stacking-chairs/kalisi-pink-chair.html"
+    ]
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/catalog/product/view/id/47218/s/cow-metal-mid-century-chair/category/150/",
+    "listingName": "Metal Mid Century Cow Dining Chair",
+    "title": "Metal Mid Century Cow Dining Chair",
+    "sku": "CWMDC-C105",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">30.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">22&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/c/o/cow_black1_34znzfiggnidbuma_1.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg",
+      "https://www.atlaschairs.com/media/catalog/product/m/a/ma-700-midcent-tr_1_xfiwljn3nq9gb5hq_1.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/c/o/cow_darkwalnut5-1_f5s9mafju7hmpthf_1.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/m/a/ma-700-midcent-tr_2_mglotm5zxf3bzxal_1.png?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110&format=jpeg"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/CWMDC-C105/00.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/CWMDC-C105/01.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/CWMDC-C105/02.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/CWMDC-C105/03.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Material": "Metal",
+      "Commercial-Grade?": "No",
+      "Overall Height": "30.5''",
+      "Overall Width": "22''",
+      "Overall Length / Depth": "18''",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "No",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "CWMDC-C105",
+      "name": "Metal Mid Century Cow Dining Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">30.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">22&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "150",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 1,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/antique-chocolate-natalie-metal-ballroom-chair.html",
+    "listingName": "Natalie Metal Ballroom Chair - Antique Chocolate",
+    "title": "Natalie Metal Ballroom Chair - Antique Chocolate",
+    "sku": "NMBC-C121-ANCH",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Color</th><td style=\"padding:8px;border:1px solid #ddd;\">Antique Chocolate</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/n/a/natalie_chocolate1_o8snahxkeyvndz0p.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg",
+      "https://www.atlaschairs.com/media/catalog/product/n/a/natalie_chocolate4_ezpsab5tk2kzgnkz.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/n/a/natalie_chocolate2_fpgqofwmwqyza4ci.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/n/a/natalie_chocolate3_cc66x35cgd5fz0wn.png?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110&format=jpeg"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/NMBC-C121-ANCH/00.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/NMBC-C121-ANCH/01.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/NMBC-C121-ANCH/02.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/NMBC-C121-ANCH/03.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Color": "Antique Chocolate",
+      "Material": "Metal",
+      "Commercial-Grade?": "No",
+      "Ships Assembled?": "No",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "NMBC-C121-ANCH",
+      "name": "Natalie Metal Ballroom Chair - Antique Chocolate",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Color</th><td style=\"padding:8px;border:1px solid #ddd;\">Antique Chocolate</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "antique-chocolate-natalie-metal-ballroom-chair",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 2,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/alexa-dining-chair-chrome.html",
+    "listingName": "Alexa Dining Chair - Chrome",
+    "title": "Alexa Dining Chair",
+    "sku": "ALEXA41",
+    "brand": null,
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Steel</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">36&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Polyurethane</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">16 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">300 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/g/o/gold-alexa-stacking-chair_2.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/2/4/24_1.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/ALEXA41/00.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/ALEXA41/01.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Material": "Steel",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "36''",
+      "Overall Width": "19''",
+      "Overall Length / Depth": "19''",
+      "Seat Material": "Polyurethane",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Product Warranty": "3 Year Warranty",
+      "Item Weight": "16 lbs.",
+      "Weight Capacity": "300 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "ALEXA41",
+      "name": "Alexa Dining Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Steel</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">36&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Polyurethane</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">16 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">300 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "alexa-dining-chair-chrome",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 3,
+    "variantUrls": [
+      "https://www.atlaschairs.com/metal-stacking-chairs/alexa-dining-chair-gold.html"
+    ]
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/stainless-steel-ava-dining-chair-chrome.html",
+    "listingName": "Stainless Steel Ava Dining Chair - Silver",
+    "title": "Stainless Steel Ava Dining Chair",
+    "sku": "AVA41",
+    "brand": null,
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Steel</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">37&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">17.7&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">15 lbs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">300 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/a/v/ava41ch_2.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg",
+      "https://www.atlaschairs.com/media/catalog/product/h/q/hqdefault_6.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/AVA41/00.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/AVA41/01.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Material": "Steel",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "37''",
+      "Overall Width": "19''",
+      "Overall Length / Depth": "19''",
+      "Seat Height": "17.7''",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Product Warranty": "3 Year Warranty",
+      "Item Weight": "15 lbs",
+      "Weight Capacity": "300 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "AVA41",
+      "name": "Stainless Steel Ava Dining Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Steel</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">37&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">19&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">17.7&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">15 lbs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">300 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "stainless-steel-ava-dining-chair-chrome",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 4,
+    "variantUrls": [
+      "https://www.atlaschairs.com/metal-stacking-chairs/stainless-steel-ava-dining-chair-gold.html"
+    ]
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/replacement-pad-ava-stainless-steel-dining-chair.html",
+    "listingName": "Replacement Pad for Ava Stainless Steel Dining Chair",
+    "title": "Replacement Pad for Ava Stainless Steel Dining Chair",
+    "sku": "AVA41PAD",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">UPC</th><td style=\"padding:8px;border:1px solid #ddd;\">810171061256</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/m/i/microsoftteams-image_44_2000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/m/i/microsoftteams-image_45_2000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/AVA41PAD/00.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/AVA41PAD/01.jpg"
+    ],
+    "specifications": {
+      "UPC": "810171061256",
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Commercial-Grade?": "Yes",
+      "Ships Assembled?": "Yes",
+      "Has Arms": "No",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "AVA41PAD",
+      "name": "Replacement Pad for Ava Stainless Steel Dining Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">UPC</th><td style=\"padding:8px;border:1px solid #ddd;\">810171061256</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "replacement-pad-ava-stainless-steel-dining-chair",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 5,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/silver-metal-stacking-chair-p-2900.html",
+    "listingName": "Titan Series™ Industrial Metal Chair - Silver",
+    "title": "Titan Series™ Industrial Metal Chair",
+    "sku": "MSC9",
+    "brand": null,
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Frame</th><td style=\"padding:8px;border:1px solid #ddd;\">Steel</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">33.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">17.75&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">17.25&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">14&#039;&#039;x14&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">1 year</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">10 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">250+ lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-chair_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/p/u/purple-metal-indoor-outdoor-stackable-chair-et-3534-pur-gg-2.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-chair-back-angle_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-quality-finish_2.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-non-marring-feet_2.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-rubber-bumpers_2.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-chair-tight_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-chair-side_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/t/o/tolix-chair-back_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/ch-31230-bk-gg_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/ch-31230-wh-gg_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/ch-31230-red-gg_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/ch-31230-or-gg_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-bk-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-kb-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-wh-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-rd-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-or-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-yl-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-db-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/t/et-3534-gn-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/s/estlx-dc.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/s/estlx-mb.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/s/estlx-bag.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/e/s/es-f1313_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/m/e/metal-stacking-chairs-yellow_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/c/r/crystal-blue-metal-indoor-outdoor-stackable-chair-et-3534-cb-gg-10.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/b/l/blue-metal-indoor-outdoor-stackable-chair-ch-31230-bl-gg-12.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/m/i/mint-green-metal-indoor-outdoor-stackable-chair-et-3534-mint-gg-2.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/00.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/01.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/02.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/03.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/04.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/05.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/06.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/07.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/08.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/09.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/10.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/11.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/12.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/13.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/14.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/15.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/16.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/17.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/18.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/19.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/20.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/21.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/22.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/23.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/24.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/25.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/26.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/27.jpg",
+      "/public/atlas-scrape/metal-stacking-chairs/images/MSC9/28.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Material": "Metal",
+      "Commercial-Grade?": "Yes",
+      "Frame": "Steel",
+      "Overall Height": "33.5''",
+      "Overall Width": "17.75''",
+      "Overall Length / Depth": "20''",
+      "Seat Height": "17.25''",
+      "Seat Size": "14''x14''",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Product Warranty": "1 year",
+      "Item Weight": "10 lbs.",
+      "Weight Capacity": "250+ lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "MSC9",
+      "name": "Titan Series™ Industrial Metal Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Frame</th><td style=\"padding:8px;border:1px solid #ddd;\">Steel</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">33.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">17.75&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">17.25&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">14&#039;&#039;x14&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">1 year</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">10 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">250+ lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "silver-metal-stacking-chair-p-2900",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 6,
+    "variantUrls": [
+      "https://www.atlaschairs.com/metal-stacking-chairs/industrial-metal-chair.html",
+      "https://www.atlaschairs.com/metal-stacking-chairs/titan-seriestm-industrial-metal-chair-black.html",
+      "https://www.atlaschairs.com/metal-stacking-chairs/titantm-series-industrial-metal-chair-clear-coat.html"
+    ]
+  },
+  {
+    "categoryFolder": "metal-stacking-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/metal-stacking-chairs",
+    "productUrl": "https://www.atlaschairs.com/metal-stacking-chairs/titan-seriestm-industrial-metal-bar-stool-black.html",
+    "listingName": "Titan Series™ Industrial Metal Bar Stool - Black",
+    "title": "Titan Series™ Metal Bar Stool",
+    "sku": "MBS9",
+    "brand": null,
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">17&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">30&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">17&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">30&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/t/i/titan-series-metal-bar-stool-white-2.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/metal-stacking-chairs/images/MBS9/00.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Material": "Metal",
+      "Commercial-Grade?": "Yes",
+      "Overall Width": "17''",
+      "Overall Height": "30''",
+      "Overall Length / Depth": "17''",
+      "Seat Height": "30''",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Item Weight": "11 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "MBS9",
+      "name": "Titan Series™ Metal Bar Stool",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Metal</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">17&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">30&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">17&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">30&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "titan-seriestm-industrial-metal-bar-stool-black",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 7,
+    "variantUrls": [
+      "https://www.atlaschairs.com/metal-stacking-chairs/industrial-metal-bar-stool-silver.html"
+    ]
+  }
+]

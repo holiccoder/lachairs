@@ -1,0 +1,224 @@
+[
+  {
+    "categoryFolder": "cross-back-chairs-material-935",
+    "sourceListingUrl": "https://www.atlaschairs.com/cross-back-chairs?material=935",
+    "productUrl": "https://www.atlaschairs.com/cross-back-chairs/farmhouse-resin-cross-back-chair-dark-brown-with-black-grain-2.html",
+    "listingName": "Farmhouse Resin Cross Back Chair  - Dark Brown with Black Grain - Closeout",
+    "title": "Farmhouse Resin Cross Back Chair",
+    "sku": "RXBC4",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">34.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039; W x 17.25&#039;&#039; D</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/r/c/rcx_chair-12000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/t/i/timbetouchxbc-lifestyle.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/2/0/20260429t205536z_refined_4c50e754.png?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&format=jpeg&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC4/00.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC4/01.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC4/02.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "34.5''",
+      "Overall Width": "18''",
+      "Overall Length / Depth": "20''",
+      "Seat Size": "20'' W x 17.25'' D",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Product Warranty": "3 Year Warranty",
+      "Item Weight": "11 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "RXBC4",
+      "name": "Farmhouse Resin Cross Back Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">34.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039; W x 17.25&#039;&#039; D</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "farmhouse-resin-cross-back-chair-dark-brown-with-black-grain-2",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 0,
+    "variantUrls": [
+      "https://www.atlaschairs.com/cross-back-chairs/farmhouse-resin-cross-back-chair.html",
+      "https://www.atlaschairs.com/cross-back-chairs/timbertouchtm-resin-cross-back-chair-black.html",
+      "https://www.atlaschairs.com/cross-back-chairs/titanpro-resin-cross-back-chair-medium-with-black-grain.html",
+      "https://www.atlaschairs.com/cross-back-chairs/timbertouchtm-resin-cross-back-chair-white-with-black-grain.html"
+    ]
+  },
+  {
+    "categoryFolder": "cross-back-chairs-material-935",
+    "sourceListingUrl": "https://www.atlaschairs.com/cross-back-chairs?material=935",
+    "productUrl": "https://www.atlaschairs.com/cross-back-chairs/farmhouse-resin-cross-back-chair-medium-with-black-grain-v2.html",
+    "listingName": "Farmhouse Resin Cross Back Chair  - Medium with Black Grain - Closeout",
+    "title": "Farmhouse Resin Cross Back Chair  - Medium with Black Grain - Closeout",
+    "sku": "RXBC26-MNBKG",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">UPC</th><td style=\"padding:8px;border:1px solid #ddd;\">810171061812</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Color</th><td style=\"padding:8px;border:1px solid #ddd;\">Medium with Black Grain</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Resin</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">34.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039; x 17.25&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/r/c/rcx_chair-12000px_1_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/r/c/rcx_chair-42000px_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/r/c/rcx_chair2000px_1_1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/r/c/rcx_chair-32000px_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/r/c/rcx_chair-22000px_1_1.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC26-MNBKG/00.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC26-MNBKG/01.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC26-MNBKG/02.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC26-MNBKG/03.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC26-MNBKG/04.jpg"
+    ],
+    "specifications": {
+      "UPC": "810171061812",
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Color": "Medium with Black Grain",
+      "Material": "Resin",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "34.5''",
+      "Overall Width": "18''",
+      "Overall Length / Depth": "20''",
+      "Seat Size": "20'' x 17.25''",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Item Weight": "11 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "RXBC26-MNBKG",
+      "name": "Farmhouse Resin Cross Back Chair  - Medium with Black Grain - Closeout",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">UPC</th><td style=\"padding:8px;border:1px solid #ddd;\">810171061812</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Color</th><td style=\"padding:8px;border:1px solid #ddd;\">Medium with Black Grain</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Resin</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">34.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039; x 17.25&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "farmhouse-resin-cross-back-chair-medium-with-black-grain-v2",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 1,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "cross-back-chairs-material-935",
+    "sourceListingUrl": "https://www.atlaschairs.com/cross-back-chairs?material=935",
+    "productUrl": "https://www.atlaschairs.com/cross-back-chairs/timbertouchtm-resin-cross-back-chair-dark-brown-with-texture.html",
+    "listingName": "TimberTouch™ Resin Cross Back Chair - Dark Brown with Texture - Closeout",
+    "title": "TimberTouch™ Resin Cross Back Chair - Dark Brown with Texture - Closeout",
+    "sku": "XBC6DB-TX",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">UPC</th><td style=\"padding:8px;border:1px solid #ddd;\">810171063212</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Color</th><td style=\"padding:8px;border:1px solid #ddd;\">Dark Brown</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Resin</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">35&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">17 1/2&quot; x 17&quot;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/c/h/chair-12000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/chair2000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/chair-22000px.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/chair-32000px.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110",
+      "https://www.atlaschairs.com/media/catalog/product/c/h/chair-42000px.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/XBC6DB-TX/00.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/XBC6DB-TX/01.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/XBC6DB-TX/02.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/XBC6DB-TX/03.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/XBC6DB-TX/04.jpg"
+    ],
+    "specifications": {
+      "UPC": "810171063212",
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Color": "Dark Brown",
+      "Material": "Resin",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "35''",
+      "Overall Width": "18''",
+      "Overall Length / Depth": "18''",
+      "Seat Height": "18''",
+      "Seat Size": "17 1/2\" x 17\"",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Item Weight": "11 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "XBC6DB-TX",
+      "name": "TimberTouch™ Resin Cross Back Chair - Dark Brown with Texture - Closeout",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">UPC</th><td style=\"padding:8px;border:1px solid #ddd;\">810171063212</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Color</th><td style=\"padding:8px;border:1px solid #ddd;\">Dark Brown</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Resin</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">35&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Height</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">17 1/2&quot; x 17&quot;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "timbertouchtm-resin-cross-back-chair-dark-brown-with-texture",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 2,
+    "variantUrls": []
+  },
+  {
+    "categoryFolder": "cross-back-chairs-material-935",
+    "sourceListingUrl": "https://www.atlaschairs.com/cross-back-chairs?material=935",
+    "productUrl": "https://www.atlaschairs.com/cross-back-chairs/titanprotm-resin-cross-back-chair.html",
+    "listingName": "TitanPRO™ Resin Cross Back Chair",
+    "title": "TitanPRO™ Resin Cross Back Chair",
+    "sku": "RXBC3",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Resin</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">34.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039; W x 17.25&#039;&#039; D</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">881 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/r/e/resin-xback-whitegrain-front_1.jpeg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/x/b/xbc-white-lifestyle-1.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x"
+    ],
+    "localImages": [
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC3/00.jpg",
+      "/public/atlas-scrape/cross-back-chairs-material-935/images/RXBC3/01.jpg"
+    ],
+    "specifications": {
+      "Can ship FedEx?": "Yes",
+      "Brand": "Lachairs",
+      "Material": "Resin",
+      "Commercial-Grade?": "Yes",
+      "Overall Height": "34.5''",
+      "Overall Width": "18''",
+      "Overall Length / Depth": "20''",
+      "Seat Size": "20'' W x 17.25'' D",
+      "Ships Assembled?": "Yes",
+      "Stackable?": "Yes",
+      "Has Arms": "No",
+      "Product Warranty": "3 Year Warranty",
+      "Item Weight": "11 lbs.",
+      "Weight Capacity": "881 lbs.",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "magento": {
+      "sku": "RXBC3",
+      "name": "TitanPRO™ Resin Cross Back Chair",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Resin</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Height</th><td style=\"padding:8px;border:1px solid #ddd;\">34.5&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">18&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Seat Size</th><td style=\"padding:8px;border:1px solid #ddd;\">20&#039;&#039; W x 17.25&#039;&#039; D</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Stackable?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Product Warranty</th><td style=\"padding:8px;border:1px solid #ddd;\">3 Year Warranty</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Item Weight</th><td style=\"padding:8px;border:1px solid #ddd;\">11 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Weight Capacity</th><td style=\"padding:8px;border:1px solid #ddd;\">881 lbs.</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "titanprotm-resin-cross-back-chair",
+      "categoryIds": [],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    },
+    "index": 3,
+    "variantUrls": []
+  }
+]

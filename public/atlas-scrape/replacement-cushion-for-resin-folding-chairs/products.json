@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Replacement Cushion for Resin Folding Chairs",
+    "sku": "RFCC3",
+    "brand": "Lachairs",
+    "price": null,
+    "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Vinyl</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Padded Seat</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">13.75&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">12.75&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+    "images": [
+      "https://www.atlaschairs.com/media/catalog/product/r/e/replacement-cushion-white-resin_2.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024",
+      "https://www.atlaschairs.com/media/catalog/product/r/e/replacement-cushion-white-resin2_2.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/l/e/le-l-1-bk-seat-gg_2.jpg?optimize=medium&fit=bounds&height=1024&width=1024&canvas=1024:1024&dpr=1 1x",
+      "https://www.atlaschairs.com/media/catalog/product/l/e/le-l-1-bk-seat-gg.jpg?optimize=medium&fit=bounds&height=110&width=88&canvas=88:110"
+    ],
+    "specifications": {
+      "Special Order Item": "No",
+      "Can ship FedEx?": "Yes",
+      "Country of Manufacture": "China",
+      "Brand": "Lachairs",
+      "Material": "Vinyl",
+      "Commercial-Grade?": "Yes",
+      "Padded Seat": "Yes",
+      "Overall Width": "13.75''",
+      "Overall Length / Depth": "12.75''",
+      "Ships Assembled?": "Yes",
+      "Has Arms": "No",
+      "Prop 65 Message": "Click here for Proposition 65 warning"
+    },
+    "urlKey": "replacement-cushion-for-resin-folding-chairs",
+    "listingName": "",
+    "categoryFolder": "replacement-cushion-for-resin-folding-chairs",
+    "sourceListingUrl": "https://www.atlaschairs.com/replacement-cushion-for-resin-folding-chairs.html",
+    "productUrl": "https://www.atlaschairs.com/replacement-cushion-for-resin-folding-chairs.html",
+    "localImages": [
+      "/public/atlas-scrape/replacement-cushion-for-resin-folding-chairs/images/RFCC3/00.jpg",
+      "/public/atlas-scrape/replacement-cushion-for-resin-folding-chairs/images/RFCC3/01.jpg",
+      "/public/atlas-scrape/replacement-cushion-for-resin-folding-chairs/images/RFCC3/02.jpg",
+      "/public/atlas-scrape/replacement-cushion-for-resin-folding-chairs/images/RFCC3/03.jpg"
+    ],
+    "magento": {
+      "sku": "RFCC3",
+      "name": "Replacement Cushion for Resin Folding Chairs",
+      "attributeSetId": 4,
+      "price": 0,
+      "weight": 0,
+      "description": "<h3>Specifications</h3>\n<table style=\"border-collapse:collapse;width:100%;max-width:600px;\">\n<tbody>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Special Order Item</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Can ship FedEx?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Country of Manufacture</th><td style=\"padding:8px;border:1px solid #ddd;\">China</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Brand</th><td style=\"padding:8px;border:1px solid #ddd;\">Lachairs</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Material</th><td style=\"padding:8px;border:1px solid #ddd;\">Vinyl</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Commercial-Grade?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Padded Seat</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Width</th><td style=\"padding:8px;border:1px solid #ddd;\">13.75&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Overall Length / Depth</th><td style=\"padding:8px;border:1px solid #ddd;\">12.75&#039;&#039;</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Ships Assembled?</th><td style=\"padding:8px;border:1px solid #ddd;\">Yes</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Has Arms</th><td style=\"padding:8px;border:1px solid #ddd;\">No</td></tr>\n    <tr><th style=\"text-align:left;padding:8px;border:1px solid #ddd;background:#f5f5f5;\">Prop 65 Message</th><td style=\"padding:8px;border:1px solid #ddd;\">Click here for Proposition 65 warning</td></tr>\n</tbody>\n</table>",
+      "urlKey": "replacement-cushion-for-resin-folding-chairs",
+      "categoryIds": [
+        "126",
+        "143",
+        "156"
+      ],
+      "status": 1,
+      "visibility": 4,
+      "typeId": "simple"
+    }
+  }
+]

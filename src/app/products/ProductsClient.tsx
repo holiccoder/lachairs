@@ -81,7 +81,6 @@ export default function ProductsClient({
     color: true,
     onSale: true,
     paddedSeat: true,
-    brand: true,
   });
   const [checkedFilters, setCheckedFilters] = useState<Record<string, boolean>>({});
 
@@ -193,10 +192,6 @@ export default function ProductsClient({
       count,
     };
   });
-
-  const brandFilters = [
-    { label: "Titan Event Furniture™", count: products.length },
-  ];
 
   let sorted = [...products];
 
@@ -350,37 +345,6 @@ export default function ProductsClient({
                   />
                   <span>Yes (0)</span>
                 </label>
-              )}
-            </div>
-
-            {/* BRAND */}
-            <div className="border-t border-gray-200 py-3">
-              <button
-                onClick={() => toggleFilter("brand")}
-                className="flex items-center justify-between w-full text-sm font-bold text-heading mb-3"
-              >
-                BRAND
-                <span className="text-xs font-normal">
-                  {expandedFilters.brand ? "−" : "+"}
-                </span>
-              </button>
-              {expandedFilters.brand && (
-                <div className="space-y-2">
-                  {brandFilters.map((f) => (
-                    <label
-                      key={f.label}
-                      className="flex items-center gap-2 text-sm text-body cursor-pointer"
-                    >
-                      <input
-                        type="checkbox"
-                        checked={!!checkedFilters[f.label]}
-                        onChange={() => toggleCheckbox(f.label)}
-                        className="w-4 h-4 rounded border-gray-300 text-brand focus:ring-brand accent-brand"
-                      />
-                      <span>{f.label} ({f.count})</span>
-                    </label>
-                  ))}
-                </div>
               )}
             </div>
 

@@ -298,17 +298,6 @@ export default function ProductClient({ product }: Props) {
             ))}
           </div>
 
-          <div className="mt-8 pt-4 border-t border-gray-200">
-            <p className="text-xs text-body leading-relaxed">
-              <span className="font-semibold text-heading">Prop 65 Message: </span>
-              This product can expose you to chemicals including wood dust, which is known
-              to the State of California to cause cancer. For more information, visit{" "}
-              <a href="https://www.P65Warnings.ca.gov" target="_blank" rel="noopener noreferrer" className="text-brand hover:text-brand-dark underline transition-colors">
-                www.P65Warnings.ca.gov
-              </a>
-              .
-            </p>
-          </div>
         </div>
       </div>
     </div>
