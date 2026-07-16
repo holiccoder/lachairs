@@ -39,18 +39,22 @@ const industryCategories = [
   {
     title: "PARTY RENTAL",
     image: "/backgrounds/01.jpg",
+    href: "/party-rental",
   },
   {
     title: "HOSPITALITY",
     image: "/backgrounds/02.jpg",
+    href: "/hospitality",
   },
   {
     title: "RESALE PARTNERS",
     image: "/backgrounds/03.jpg",
+    href: "/resale-partners",
   },
   {
     title: "VENUE",
     image: "/backgrounds/04.jpg",
+    href: "/venue",
   },
 ];
 
@@ -287,17 +291,19 @@ export default function HomeClient({ products }: { products: Product[] }) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-1 bg-white">
             {industryCategories.map((cat) => (
               <FadeIn key={cat.title} className="relative h-64 md:h-80 overflow-hidden group cursor-pointer">
-                <img
-                  src={cat.image}
-                  alt={cat.title}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <h3 className="text-white text-2xl md:text-3xl font-bold tracking-widest">
-                    {cat.title}
-                  </h3>
-                </div>
+                <Link href={cat.href} className="absolute inset-0 block">
+                  <img
+                    src={cat.image}
+                    alt={cat.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <h3 className="text-white text-2xl md:text-3xl font-bold tracking-widest">
+                      {cat.title}
+                    </h3>
+                  </div>
+                </Link>
               </FadeIn>
             ))}
           </div>

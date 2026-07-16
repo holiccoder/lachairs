@@ -23,6 +23,13 @@ const footerSupportLinks = [
   { label: "Privacy Policy", href: "/privacy" },
 ];
 
+const footerIndustryLinks = [
+  { label: "Party Rental Customers", href: "/party-rental" },
+  { label: "Hospitality Customers", href: "/hospitality" },
+  { label: "Resale Partners", href: "/resale-partners" },
+  { label: "Venue Customers", href: "/venue" },
+];
+
 /* -------------------------------------------------------------------------- */
 /*  Component                                                                  */
 /* -------------------------------------------------------------------------- */
@@ -82,7 +89,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 pt-16 pb-8 px-6 lg:px-12">
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] gap-10 mb-12">
           {/* Column 1 — Brand */}
           <div>
             <div className="mb-4">
@@ -128,6 +135,22 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               {footerSupportLinks.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href} className="text-sm text-body hover:text-brand transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Column 4 — Industries */}
+          <div>
+            <h4 className="text-sm font-bold text-heading mb-4 uppercase tracking-wide">
+              Industries
+            </h4>
+            <ul className="space-y-2">
+              {footerIndustryLinks.map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-sm text-body hover:text-brand transition-colors">
                     {link.label}
