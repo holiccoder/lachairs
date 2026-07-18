@@ -19,10 +19,21 @@ const inquiryTypes = [
   "Partnership Opportunity",
 ];
 
-const contactCards = [
+type ContactLine = {
+  text: string;
+  href?: string;
+};
+
+type ContactCard = {
+  title: string;
+  lines: ContactLine[];
+  icon: React.ReactNode;
+};
+
+const contactCards: ContactCard[] = [
   {
     title: "Sales & Inquiries",
-    lines: ["info@lachairs.com"],
+    lines: [{ text: "info@lachairs.com", href: "mailto:info@lachairs.com" }],
     icon: (
       <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
         <rect x="8" y="10" width="32" height="28" rx="4" />
@@ -34,7 +45,7 @@ const contactCards = [
   },
   {
     title: "Account Support",
-    lines: ["accounts@lachairs.com"],
+    lines: [{ text: "accounts@lachairs.com", href: "mailto:accounts@lachairs.com" }],
     icon: (
       <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
         <circle cx="24" cy="16" r="8" />
@@ -44,8 +55,8 @@ const contactCards = [
     ),
   },
   {
-    title: "Headquarters",
-    lines: ["Covina, CA 91723", "628 Shoppers Ln,"],
+    title: "Office",
+    lines: [{ text: "628 Shoppers Ln" }, { text: "Covina, CA 91723" }],
     icon: (
       <svg viewBox="0 0 48 48" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M24 4 C16 12 8 18 8 28 C8 36 16 42 24 42 C32 42 40 36 40 28 C40 18 32 12 24 4Z" />
@@ -125,7 +136,23 @@ export default function ContactPage() {
                 <div className="text-brand mb-4">{card.icon}</div>
                 <h3 className="text-sm font-bold text-heading mb-2">{card.title}</h3>
                 {card.lines.map((line, i) => (
-                  <p key={line} className={`text-sm text-body leading-relaxed ${i === 0 && card.title === "Headquarters" ? "font-bold" : ""}`}>{line}</p>
+                  <p
+                    key={line.text}
+                    className={`text-sm leading-relaxed ${
+                      i === 0 && card.title === "Office" ? "font-bold text-heading" : "text-body"
+                    }`}
+                  >
+                    {line.href ? (
+                      <a
+                        href={line.href}
+                        className="text-body hover:text-brand transition-colors"
+                      >
+                        {line.text}
+                      </a>
+                    ) : (
+                      line.text
+                    )}
+                  </p>
                 ))}
               </div>
             ))}
@@ -267,12 +294,21 @@ export default function ContactPage() {
               <h2 className="text-xl font-bold text-heading mb-6">Our Location</h2>
               <div className="space-y-5">
                 <div className="bg-[#F5F5F5] rounded-lg p-6">
-                  <h3 className="font-bold text-heading mb-2">Covina, CA</h3>
+                  <h3 className="font-bold text-heading mb-2">Warehouse</h3>
                   <p className="text-sm text-body leading-relaxed">
-                    <span className="font-bold">Covina, CA 91723</span><br />
-                    628 Shoppers Ln
+                    <span className="font-bold">960 W Brooks St</span><br />
+                    Ontario, CA 91762
                   </p>
                 </div>
+              </div>
+
+              <div className="mt-8 bg-brand/5 border border-brand/20 rounded-lg p-6">
+                <h3 className="font-bold text-heading mb-2">Phone</h3>
+                <p className="text-sm text-body leading-relaxed">
+                  <a href="tel:972-835-1856" className="text-body hover:text-brand transition-colors">
+                    972-835-1856
+                  </a>
+                </p>
               </div>
 
               <div className="mt-8 bg-brand/5 border border-brand/20 rounded-lg p-6">

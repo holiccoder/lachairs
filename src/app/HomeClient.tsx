@@ -17,6 +17,7 @@ const heroSlides = [
     heading: "The Easiest Way to Source Commercial Furniture",
     text: "Reliable inventory, contract-grade durability, and dedicated support for business buyers. Get started by creating your account.",
     button: "UNLOCK BUSINESS PRICING",
+    buttonHref: "/register",
     subtext: "Account Approval Typically Within 1 Business Day",
   },
   {
@@ -24,6 +25,7 @@ const heroSlides = [
     heading: "Custom Furniture Designed for Your Vision",
     text: "From concept to completion, we work with designers and venues to craft pieces that match your exact specifications.",
     button: "EXPLORE CUSTOMIZATION",
+    buttonHref: "/contact",
     subtext: "Free Design Consultation Available",
   },
   {
@@ -31,6 +33,7 @@ const heroSlides = [
     heading: "Trusted by Hospitality Leaders Nationwide",
     text: "Join hundreds of hotels, venues, and event planners who rely on Lachairs for quality, consistency, and on-time delivery.",
     button: "CREATE WHOLESALE ACCOUNT",
+    buttonHref: "/register",
     subtext: "Serving the US and Canada",
   },
 ];
@@ -216,9 +219,12 @@ export default function HomeClient({ products }: { products: Product[] }) {
                           <p className="text-base lg:text-lg text-white/80 leading-relaxed mb-8">
                             {slide.text}
                           </p>
-                          <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide">
+                          <Link
+                            href={slide.buttonHref}
+                            className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide inline-block text-center"
+                          >
                             {slide.button}
-                          </button>
+                          </Link>
                           <p className="mt-4 text-xs text-white/60">
                             {slide.subtext}
                           </p>
@@ -389,9 +395,12 @@ export default function HomeClient({ products }: { products: Product[] }) {
               today to learn more about our products and services.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <button className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide w-full sm:w-auto">
+              <Link
+                href="/register"
+                className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide w-full sm:w-auto inline-block text-center"
+              >
                 CREATE A WHOLESALE ACCOUNT
-              </button>
+              </Link>
               <Link
                 href="/contact"
                 className="bg-brand hover:bg-brand-dark text-white font-semibold text-sm px-8 py-3.5 rounded transition-colors tracking-wide w-full sm:w-auto inline-block text-center"
