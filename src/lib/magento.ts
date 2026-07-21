@@ -233,7 +233,7 @@ export async function getProducts(
 ): Promise<ProductsResult> {
   try {
     const data = await magentoFetch<MagentoProductsResponse>(
-      `products?searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
+      `products?searchCriteria[filter_groups][0][filters][0][field]=status&searchCriteria[filter_groups][0][filters][0][value]=1&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
     );
 
     return {
@@ -251,6 +251,7 @@ export async function getProducts(
 export async function getProductBySku(sku: string): Promise<Product | null> {
   try {
     const product = await magentoFetch<MagentoProduct>(`products/${encodeURIComponent(sku)}`);
+    if (product.status !== 1) return null;
     return transformProduct(product);
   } catch {
     return null;
@@ -259,7 +260,7 @@ export async function getProductBySku(sku: string): Promise<Product | null> {
 
 export async function getProductByUrlKey(urlKey: string): Promise<Product | null> {
   try {
-    const filter = `searchCriteria[filter_groups][0][filters][0][field]=url_key&searchCriteria[filter_groups][0][filters][0][value]=${encodeURIComponent(urlKey)}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq`;
+    const filter = `searchCriteria[filter_groups][0][filters][0][field]=url_key&searchCriteria[filter_groups][0][filters][0][value]=${encodeURIComponent(urlKey)}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[filter_groups][1][filters][0][field]=status&searchCriteria[filter_groups][1][filters][0][value]=1&searchCriteria[filter_groups][1][filters][0][condition_type]=eq`;
     const data = await magentoFetch<MagentoProductsResponse>(`products?${filter}`);
     if (data.items.length === 0) return null;
     return transformProduct(data.items[0]);
@@ -275,7 +276,7 @@ export async function getAllProducts(): Promise<Product[]> {
 
 export async function searchProducts(query: string, page = 1, pageSize = 24): Promise<ProductsResult> {
   try {
-    const filter = `searchCriteria[filter_groups][0][filters][0][field]=name&searchCriteria[filter_groups][0][filters][0][value]=%25${encodeURIComponent(query)}%25&searchCriteria[filter_groups][0][filters][0][condition_type]=like`;
+    const filter = `searchCriteria[filter_groups][0][filters][0][field]=name&searchCriteria[filter_groups][0][filters][0][value]=%25${encodeURIComponent(query)}%25&searchCriteria[filter_groups][0][filters][0][condition_type]=like&searchCriteria[filter_groups][1][filters][0][field]=status&searchCriteria[filter_groups][1][filters][0][value]=1&searchCriteria[filter_groups][1][filters][0][condition_type]=eq`;
     const data = await magentoFetch<MagentoProductsResponse>(
       `products?${filter}&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
     );
@@ -351,7 +352,7 @@ export async function getProductsByCategory(
   pageSize = 24
 ): Promise<ProductsResult> {
   try {
-    const filter = `searchCriteria[filter_groups][0][filters][0][field]=category_id&searchCriteria[filter_groups][0][filters][0][value]=${categoryId}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq`;
+    const filter = `searchCriteria[filter_groups][0][filters][0][field]=category_id&searchCriteria[filter_groups][0][filters][0][value]=${categoryId}&searchCriteria[filter_groups][0][filters][0][condition_type]=eq&searchCriteria[filter_groups][1][filters][0][field]=status&searchCriteria[filter_groups][1][filters][0][value]=1&searchCriteria[filter_groups][1][filters][0][condition_type]=eq`;
     const data = await magentoFetch<MagentoProductsResponse>(
       `products?${filter}&searchCriteria[pageSize]=${pageSize}&searchCriteria[currentPage]=${page}`
     );
