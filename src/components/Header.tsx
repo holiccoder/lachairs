@@ -18,8 +18,8 @@ const QUINCEANERA_NAME = "Quinceañera Dresses and Accessories";
 
 /**
  * Display the Quinceañera category as a top-level menu item positioned
- * immediately after “More Party Supplies”, while keeping its Magento
- * parent/URL path unchanged.
+ * immediately after “More Party Supplies”. Its Magento structure stays nested,
+ * but the menu link points to the flat URL /products/quinceanera-dresses-and-accessories.
  */
 function promoteQuinceaneraMenuItem(categories: Category[]): Category[] {
   const parentIndex = categories.findIndex((cat) =>
@@ -31,7 +31,7 @@ function promoteQuinceaneraMenuItem(categories: Category[]): Category[] {
   const childIndex = parent.children.findIndex(
     (child) => child.name === QUINCEANERA_NAME
   );
-  const quince = parent.children[childIndex];
+  const quince = { ...parent.children[childIndex], urlPath: parent.children[childIndex].urlKey };
 
   const result = [...categories];
   result[parentIndex] = {
