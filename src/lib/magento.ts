@@ -305,15 +305,24 @@ export async function getCategories(): Promise<Category[]> {
   }
 }
 
+function slugifyName(name: string): string {
+  return name
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function transformCategory(cat: MagentoCategory, parentPath = ""): Category {
   // Generate url_key from name if not available
   const rawUrlKey = catAttr(cat, "url_key");
-  const urlKey = rawUrlKey || cat.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  
+  const urlKey = rawUrlKey || slugifyName(cat.name);
+
   // Build url_path: parentPath/urlKey for nested categories
   const rawUrlPath = catAttr(cat, "url_path");
   const urlPath = rawUrlPath || (parentPath ? `${parentPath}/${urlKey}` : urlKey);
-  
+
   return {
     id: cat.id,
     parentId: cat.parent_id,

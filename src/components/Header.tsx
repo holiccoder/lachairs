@@ -11,6 +11,38 @@ import CartDrawer from "@/components/cart/CartDrawer";
 import Toast from "@/components/cart/Toast";
 
 /* -------------------------------------------------------------------------- */
+/*  Helpers                                                                    */
+/* -------------------------------------------------------------------------- */
+
+const QUINCEANERA_NAME = "Quinceañera Dresses and Accessories";
+
+/**
+ * Display the Quinceañera category as a top-level menu item positioned
+ * immediately after “More Party Supplies”, while keeping its Magento
+ * parent/URL path unchanged.
+ */
+function promoteQuinceaneraMenuItem(categories: Category[]): Category[] {
+  const parentIndex = categories.findIndex((cat) =>
+    cat.children.some((child) => child.name === QUINCEANERA_NAME)
+  );
+  if (parentIndex === -1) return categories;
+
+  const parent = categories[parentIndex];
+  const childIndex = parent.children.findIndex(
+    (child) => child.name === QUINCEANERA_NAME
+  );
+  const quince = parent.children[childIndex];
+
+  const result = [...categories];
+  result[parentIndex] = {
+    ...parent,
+    children: parent.children.filter((_, i) => i !== childIndex),
+  };
+  result.splice(parentIndex + 1, 0, quince);
+  return result;
+}
+
+/* -------------------------------------------------------------------------- */
 /*  Component                                                                  */
 /* -------------------------------------------------------------------------- */
 
@@ -57,7 +89,7 @@ export default function Header() {
   useEffect(() => {
     fetch("/api/categories")
       .then((res) => res.json())
-      .then(setCategories)
+      .then((data) => setCategories(promoteQuinceaneraMenuItem(data)))
       .catch(() => {});
   }, []);
 
